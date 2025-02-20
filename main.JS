@@ -377,7 +377,17 @@
 
 //bodlogo-1
 
-let i = 0;
+for (let a = 0; a <= 100; a += 2) {
+  console.log(a);
+}
 
-for(i <= 100; i ++)
-  if{}
+for (let b = 1; b <= 100; b += 2) {
+  console.log(b);
+}
+
+for (let c = 1; c <= 200; c += 2) {
+  console.log(c);
+}
+
+if(
+)
