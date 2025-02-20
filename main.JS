@@ -164,109 +164,220 @@
 // console.log("bodlogo-7: ugugdsun tsag min sec-iig sucund ruu hurvuul:");
 // console.log("bodlogo-7 hariu: ", totalSecond + "Sec");
 
-
 //bodlogo-2   //9,3,2
 
-let toot1 = 2;
-let toot2 = 3;
-let toot3 = 9;
+// let toot1 = 2;
+// let toot2 = 3;
+// let toot3 = 9;
 
-if(toot1 < toot2 && toot1 < toot3){
-  if(toot1 < toot3){
-    console.log("Hamgiin baga too", toot1);
-  }else if(toot2 < toot1 && toot2 < toot3){
-    console.log("Hamgiin baga too", toot1)
-  }
-}else if(toot3 < toot1 && toot3 < toot2 ) {
-  console.log("Hamgiin baga too", toot3);
-}
+// if (toot1 < toot2 && toot1 < toot3) {
+//   if (toot1 < toot3) {
+//     console.log("Hamgiin baga too", toot1);
+//   } else if (toot2 < toot1 && toot2 < toot3) {
+//     console.log("Hamgiin baga too", toot1);
+//   }
+// } else if (toot3 < toot1 && toot3 < toot2) {
+//   console.log("Hamgiin baga too", toot3);
+// }
 
-//bodlogo-4
+// console.log("Bodlogo-2: ugugdsun 3 toonii bagiig ol?");
+// console.log("Bodlogo-2 hariu: ", "Hamgiin baga too:", toot1);
 
-let t1 = 2;
-let t2 = 9;
-let t3 = 4;
+// //bodlogo-3
 
-let urjver = 1;
+// q1 = 7;
+// q2 = 1;
+// q3 = 12;
 
-if(t1 < 5){
- urjver = urjver * t1; 
-}
+// if (q3 > q2 && q3 > q1) {
+//   console.log("Hamgiin ih too", q3);
+// } else if (q1 > q2 && q3 > q2) {
+//   console.log("hamgiin ih too", q3);
+// }
 
-if(t2 < 5){
-  urjver = urjver * t2; 
- }
+// console.log("Bodlogo-3: ugugdsun 3 toonii ihiig ol?");
+// console.log("Bodlogo-3 hariu: ", "Hamgiin ih too:", q3);
 
- if(t3 < 5){
-  urjver = urjver * t3; 
- }
+// //bodlogo-4
 
-urjver = t1 * t2 * t3;
-console.log("Urjver", urjver)
+// let t1 = 2;
+// let t2 = 9;
+// let t3 = 4;
 
-//bodlogo-6
+// let urjver = 1;
 
-let sar = 9;
+// if (t1 < 5) {
+//   urjver = urjver * t1;
+// }
 
-if(sar === 12 || sar === 1 || sar === 2){
-  console.log("Өвлийн улирал байна.");
-}else if(sar === 3 || sar === 4 || sar === 5){
-  console.log("Хаврын улирал байна.");
-}else if(sar === 6 || sar === 7 || sar === 8){
-  console.log("Зуны улирал байна.");
-}else if(sar === 9 || sar === 10 || sar === 11){
-  console.log("Намрын улирал байна.");
-}else{
-  console.log("Таны оруулсан сарын тоо буруу байна.");
-}
+// if (t2 < 5) {
+//   urjver = urjver * t2;
+// } else {
+//   console.log("5-aas ih too baina.");
+// }
+
+// if (t3 < 5) {
+//   urjver = urjver * t3;
+// }
+
+// urjver = t1 * t3;
+// console.log("Urjver", urjver);
+
+// console.log("Bodlogo-4: ugugdsun 3 toonii 5-aas baga toonuudiin urjveriig ol?");
+// console.log("Bodlogo-4 hariu: ", "5-aas baga toonii urjver:", urjver);
+
+// //bodlogo-5
+
+// let w1 = 11,
+//   w2 = 9,
+//   w3 = 4,
+//   w4 = 3,
+//   urjvere = 1;
+
+// if (w1 > 5) {
+//   urjvere = urjvere * w1;
+// }
+
+// if (w2 > 5) {
+//   urjvere = urjvere * w2;
+// }
+
+// if (w3 > 5) {
+//   console.log("5-aas ih too baih yostoi.");
+// } else {
+//   console.log(w3, "5-aas baga too baina.");
+// }
+
+// if (w4 > 5) {
+//   console.log("5-aas ih too baih yostoi.");
+// } else {
+//   console.log(w4, "5-aas baga too baina.");
+// }
+
+// urjvere = w1 * w2;
+
+// console.log("Bodlogo-5: ugugdsun 4 toonii 5-aas ih toonuudiin urjveriig ol?");
+// console.log("Bodlogo-5 hariu: ", "5-aas ih toonii urjver:", urjvere);
+
+// //bodlogo-6
+
+// sap = 9;
+
+// if (sap === 12 || sap === 1 || sap === 2) {
+//   console.log("Өвлийн улирал байна.");
+// } else if (sap === 3 || sap === 4 || sap === 5) {
+//   console.log("Хаврын улирал байна.");
+// } else if (sap === 6 || sap === 7 || sap === 8) {
+//   console.log("Зуны улирал байна.");
+// } else if (sap === 9 || sap === 10 || sap === 11) {
+//   console.log("Намрын улирал байна.");
+// } else {
+//   console.log("Таны оруулсан сарын тоо буруу байна.");
+// }
+
+// console.log("Bodlogo-6: Ugugdsun sar ali uliral we?");
+// console.log("Bodlogo-6 hariu:", "Намрын улирал байна.");
+
+// //bodlogo-1
+
+// let m1 = 3,
+//   m2 = 2,
+//   m3 = 11,
+//   m4 = 7;
+
+// if (m1 % 2 === 0) {
+//   console.log("Even");
+// } else {
+//   console.log("Odd");
+// }
+// if (m2 % 2 === 0) {
+//   console.log("Even");
+// } else {
+//   console.log("Odd");
+// }
+// if (m3 % 2 === 0) {
+//   console.log("Even");
+// } else {
+//   console.log("Odd");
+// }
+// if (m4 % 2 === 0) {
+//   console.log("Even");
+// } else {
+//   console.log("Odd");
+// }
+
+// let nums = [3, 2, 11, 7];
+// console.log("===============");
+
+// for (let i = 0; i < 4; i++) {
+//   if (nums[i] % 2 === 0) {
+//     console.log("Even", nums[i]);
+//   } else {
+//     console.log("Odd", nums[i]);
+//   }
+// }
+
+// let j = 0;
+
+// while (j < 4) {
+//   if (nums[j] % 2 === 0) {
+//     console.log("Even", nums[j]);
+//   } else {
+//     console.log("Odd", nums[j]);
+//   }
+//   j++;
+// }
+
+// console.log("Bodlogo-1: Ugugdsun toonii tegsh sondgoig ol?");
+// console.log("Bodlogo-1 hariu:", "Tegsh too:", m2, "Songdgoi too:", m1, m3, m4);
+
+// //bodlogo-7
+
+// let bat = 67;
+// ochir = 59;
+// dun = 0;
+
+// const minNum = 1;
+// const maxNum = 59;
+
+// if (dun <= 59) {
+//   console.log("mash muu");
+// }
+
+// miniNum = 60;
+// maxiNum = 69;
+
+// if (dun <= 69) {
+//   console.log("muu");
+// }
+
+// minimNum = 70;
+// maximNum = 79;
+
+// if (dun <= 79) {
+//   console.log("dund");
+// }
+
+// minimuNum = 80;
+// maximuNum = 89;
+
+// if (dun <= 89) {
+//   console.log("sain");
+// }
+
+// minimumNum = 90;
+// maximumNum = 100;
+
+// if (dun <= 100) {
+//   console.log("onts");
+// }
+
+// console.log("Bodlogo-7: Suragchiin dung dugne?");
+// console.log("Bodlogo-7 hariu:", bat, ochir);
 
 //bodlogo-1
 
-let m1 = 3, 
-m2 = 2, 
-m3 = 11, 
-m4 = 7;
+let i = 0;
 
-if(m1 % 2 === 0){
-  console.log("Even")
-}else{
-  console.log("Odd")
-}
-if(m2 % 2 === 0){
-  console.log("Even")
-}else{
-  console.log("Odd")
-}
-if(m3 % 2 === 0){
-  console.log("Even")
-}else{
-  console.log("Odd")
-}
-if(m4 % 2 === 0){
-  console.log("Even")
-}else{
-  console.log("Odd")
-}
-
-let nums = [3,2,11,7];
-console.log("===============");
-
-for(let i=0; i < 4; i ++){
-  if(nums[i] % 2 === 0){
-    console.log("Even", nums[i])
-  }else{
-    console.log("Odd", nums[i])
-  } 
-}
-
-let j = 0;
-
-while(j < 4){
-  if(nums[j] % 2 === 0){
-    console.log("Even", nums[j])
-  }else{
-    console.log("Odd", nums[j])
-  } 
-  j ++;
-}
-
+for(i <= 100; i ++)
+  if{}
