@@ -377,17 +377,59 @@
 
 //bodlogo-1
 
-for (let a = 0; a <= 100; a += 2) {
-  console.log(a);
+for (let a = 0; a <= 100; a ++){
+if(a % 2 ==0){console.log(a)}
 }
 
-for (let b = 1; b <= 100; b += 2) {
-  console.log(b);
+//bodlogo-2
+
+for (let b = 1; b <= 100; b ++) {
+if(b % 2 ==1){console.log(b)} 
 }
 
-for (let c = 1; c <= 200; c += 2) {
-  console.log(c);
+//bodlogo-3
+
+let ee = 1;
+for(let dd = 1; dd < 200; dd ++){
+if(dd % 2 === 0)
+{ee *= dd
+
+}
+} console.log(ee)
+
+
+//bodlogo-4
+
+let e = 0;
+for(let d = 1; d < 200; d ++){
+if(d % 2 === 1)
+  {e += d
+}
+} console.log(e)
+
+//bodlogo-8
+
+let f = 1234;
+let g = 0;
+let h = 0;
+count = 0;
+
+while(f !== 0){
+  g = f % 10;
+  h = h + g;
+  f = (f - g) / 10;
+  console.log("==============")
+  count ++
+  console.log("DIG:", g);
+  console.log("H:", h);
+  console.log("F:", f);
+  console.log("COUNT:", count)
 }
 
-if(
-)
+const arr = [1, 2, 3, 4, 5];
+console.log("ORIGINAL:", arr)
+for(let = r = 0; r < arr.length; r ++){
+  arr[r] = arr[r] * 2;
+}
+  console.log("changed:", arr);
+  console.log("===============")
