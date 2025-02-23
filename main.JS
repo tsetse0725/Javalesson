@@ -377,59 +377,114 @@
 
 //bodlogo-1
 
-for (let a = 0; a <= 100; a ++){
-if(a % 2 ==0){console.log(a)}
+// for (let a = 0; a <= 100; a++) {
+//   if (a % 2 == 0) {
+//     console.log(a);
+//   }
+// }
+
+// //bodlogo-2
+
+// for (let b = 1; b <= 100; b++) {
+//   if (b % 2 == 1) {
+//     console.log(b);
+//   }
+// }
+
+// //bodlogo-3
+
+// let ee = 1;
+// for (let dd = 1; dd < 200; dd++) {
+//   if (dd % 2 === 0) {
+//     ee *= dd;
+//   }
+// }
+// console.log(ee);
+
+// //bodlogo-4
+
+// let e = 0;
+// for (let d = 1; d < 200; d++) {
+//   if (d % 2 === 1) {
+//     e += d;
+//   }
+// }
+// console.log(e);
+
+// //bodlogo-2
+
+// let f = 1234;
+// let g = 0;
+// let h = 0;
+// count = 0;
+
+// while (f !== 0) {
+//   g = f % 10;
+//   h = h + g;
+//   f = (f - g) / 10;
+//   console.log("==============");
+//   count++;
+//   console.log("DIG:", g);
+//   console.log("H:", h);
+//   console.log("F:", f);
+//   console.log("COUNT:", count);
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+// console.log("ORIGINAL:", arr);
+// for (let = r = 0; r < arr.length; r++) {
+//   arr[r] = arr[r] * 2;
+// }
+// console.log("changed:", arr);
+// console.log("===============");
+
+//bodlogo-1
+
+console.log("Bodlogo-1:");
+
+n = 24578;
+let urvuu = 0;
+while (n > 0) {
+  urvuu = urvuu * 10 + (n % 10);
+  n = Math.floor(n / 10);
 }
 
-//bodlogo-2
-
-for (let b = 1; b <= 100; b ++) {
-if(b % 2 ==1){console.log(b)} 
-}
-
+console.log("24578");
+console.log(urvuu);
+console.log("========");
 //bodlogo-3
+console.log("Bodlogo-3:");
 
-let ee = 1;
-for(let dd = 1; dd < 200; dd ++){
-if(dd % 2 === 0)
-{ee *= dd
-
+let i = 9;
+for (let j = 1; j <= 10; j++) {
+  console.log(i + "X" + j + "=" + i * j);
 }
-} console.log(ee)
+console.log("==========");
 
+//bodlogo-6
+console.log("Bodlogo-6:");
+f = [1, 6, 4, 7, 9];
+esreg = Array.from(f).reverse();
+console.log(f);
+console.log(esreg);
+console.log("=========");
 
 //bodlogo-4
 
-let e = 0;
-for(let d = 1; d < 200; d ++){
-if(d % 2 === 1)
-  {e += d
+z = 3;
+t = 7;
+b = 8;
+
+anhniiToo = 0;
+
+if (z > 0) {
+  console.log("Анхны тоо:", z);
 }
-} console.log(e)
 
 //bodlogo-8
 
-let f = 1234;
-let g = 0;
-let h = 0;
-count = 0;
+too = [45, 67, 23, 56, 34];
 
-while(f !== 0){
-  g = f % 10;
-  h = h + g;
-  f = (f - g) / 10;
-  console.log("==============")
-  count ++
-  console.log("DIG:", g);
-  console.log("H:", h);
-  console.log("F:", f);
-  console.log("COUNT:", count)
-}
+too.sort((a, b) => a - b);
 
-const arr = [1, 2, 3, 4, 5];
-console.log("ORIGINAL:", arr)
-for(let = r = 0; r < arr.length; r ++){
-  arr[r] = arr[r] * 2;
-}
-  console.log("changed:", arr);
-  console.log("===============")
+console.log(too);
