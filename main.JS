@@ -440,41 +440,41 @@
 
 //bodlogo-1
 
-console.log("Bodlogo-1:");
+// console.log("Bodlogo-1:");
 
-n = 24578;
-let urvuu = 0;
-while (n > 0) {
-  urvuu = urvuu * 10 + (n % 10);
-  n = Math.floor(n / 10);
-}
+// n = 24578;
+// let urvuu = 0;
+// while (n > 0) {
+//   urvuu = urvuu * 10 + (n % 10);
+//   n = Math.floor(n / 10);
+// }
 
-console.log("24578");
-console.log(urvuu);
-console.log("========");
+// console.log("24578");
+// console.log(urvuu);
+// console.log("========");
 
-//bodlogo-3
-console.log("Bodlogo-3:");
+// //bodlogo-3
+// console.log("Bodlogo-3:");
 
-let i = 3;
-for (let j = 1; j <= 10; j++) {
-  console.log(i + "X" + j + "=" + i * j);
-}
-console.log("==========");
+// let i = 3;
+// for (let j = 1; j <= 10; j++) {
+//   console.log(i + "X" + j + "=" + i * j);
+// }
+// console.log("==========");
 
-//bodlogo-6
-console.log("Bodlogo-6:");
-f = [1, 6, 4, 7, 9];
-esreg = Array.from(f).reverse();
-console.log(f);
-console.log(esreg);
-console.log("=========");
+// //bodlogo-6
+// console.log("Bodlogo-6:");
+// f = [1, 6, 4, 7, 9];
+// esreg = Array.from(f).reverse();
+// console.log(f);
+// console.log(esreg);
+// console.log("=========");
 
 //bodlogo-4
 
-z = 3;
-t = 7;
-b = 8;
+// z = 3;
+// t = 7;
+// b = 8;
 
 //bodlogo-8
 
@@ -488,9 +488,6 @@ b = 8;
 //   }
 
 // console.log("MIN:",min)
-  
-
-
 
 //bodlogo-5
 
@@ -525,8 +522,7 @@ b = 8;
 
 // let aa = 90;
 // const vv = 100;
-// var ff = 121; 
-
+// var ff = 121;
 
 // console.log(ff);
 // console.log(aa);
@@ -608,24 +604,91 @@ b = 8;
 // console.log("Hayag:", person.address.district);
 
 let rabbit = {
-name: 'bunny',
-color: 'white',
+  name: "bunny",
+  color: "white",
 };
 
 let mouse = {
-  name: 'jerry',
-  color: 'brown',
+  name: "jerry",
+  color: "brown",
 };
 
 let marmot = {
-  name: 'walter',
-  color: 'yellow',
+  name: "walter",
+  color: "yellow",
 };
 
 let animals = [rabbit, mouse, marmot];
 
-console.log(animals[0],name);
+console.log(animals[0]);
 
-for(let index = 0; index < animals.length; index ++) {
+for (let index = 0; index < animals.length; index++) {
   console.log("Name:", animals[index].name);
 }
+
+console.log("===========================================");
+
+//homework
+
+let students = [
+  {
+    name: "Сэд-Эрдэнэ",
+    age: 19,
+    gender: "male",
+    points: 70,
+  },
+  {
+    name: "Индра",
+    age: 19,
+    gender: "female",
+    points: 50,
+  },
+  {
+    name: "Хатнаа",
+    age: 21,
+    gender: "female",
+    points: 99,
+  },
+  {
+    name: "Тэмүүлэн",
+    age: 23,
+    gender: "male",
+    points: 55,
+  },
+  {
+    name: "Намуун",
+    age: 23,
+    gender: "female",
+    points: 85,
+  },
+];
+
+//bodlogo-1
+
+console.log(students[0]);
+
+console.log("==========================");
+
+//bodlogo-2
+
+cc = [0]
+
+for(ff = 0 ; ff < students.length, ff ++){
+  if(students[ff].gender > length){
+    cc = cc + students[ff];
+  }
+}
+
+// console.log(cc)
+
+//bodlogo-4
+
+aa = 0;
+
+for (let lo = 0, lo < students.length, a++) {
+  if (students[a].age >= 21) {
+    a = a + students[a];
+  }
+}
+
+console.log("21-ээс дээш настай оюутан: ", a);
