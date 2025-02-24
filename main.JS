@@ -452,10 +452,11 @@ while (n > 0) {
 console.log("24578");
 console.log(urvuu);
 console.log("========");
+
 //bodlogo-3
 console.log("Bodlogo-3:");
 
-let i = 9;
+let i = 3;
 for (let j = 1; j <= 10; j++) {
   console.log(i + "X" + j + "=" + i * j);
 }
@@ -475,16 +476,156 @@ z = 3;
 t = 7;
 b = 8;
 
-anhniiToo = 0;
-
-if (z > 0) {
-  console.log("Анхны тоо:", z);
-}
-
 //bodlogo-8
 
-too = [45, 67, 23, 56, 34];
+// let arr = [45, 67, 23, 56, 34];
+// let min = 23;
 
-too.sort((a, b) => a - b);
+// for(let index = 0; index < arr.length; index ++){
+//   console.log(arr[index]);
+//   if(min > arr[index]){
+//     min = arr[index];
+//   }
 
-console.log(too);
+// console.log("MIN:",min)
+  
+
+
+
+//bodlogo-5
+
+// let h = 5;
+
+// u = [4, 5, 7, 8, 1, 5, 3, 5];
+
+//bodlogo-2
+
+// let qq = 2764;
+// let oron = 0;
+// while(qq !== 0){
+//   oron = qq % 10;
+//   qq = (qq - oron) / 10;
+// }
+
+// console.log("LD:", oron)
+// console.log("=================")
+
+// //bodlogo-1
+
+// let ww = 23457;
+// let oronn = 0;
+// let urvuuu = 0;
+
+// while(ww !== 0){
+//   oronn = ww % 10;
+//   urvuuu = urvuuu * 10 + oronn;
+//   ww = (ww - oronn) / 10;
+// }
+// console.log("REV:", urvuuu)
+
+// let aa = 90;
+// const vv = 100;
+// var ff = 121; 
+
+
+// console.log(ff);
+// console.log(aa);
+// console.log(vv);
+
+// // if(z > y){
+//   //block scope
+//   console.log(zz);
+// console.log(aa);
+// console(vv);
+// var kkk = 10;
+// let ii = 20;
+// const er = 30;
+// }
+
+// let aar2d = [
+// [0, 1, 2],
+// [3, 4, 5],
+// [6, 7, 8],
+// ];
+
+// console.log(aar2d[0][0]);
+// console.log(aar2d[0][1]);
+// console.log(aar2d[0][2]);
+
+// for(let r = 0; r < aar2d.length; r ++){
+//   for(let c = 0; c < aar2d.length; c ++){
+//     console.log(aar2d[r][c]);
+//   }
+// }
+
+// let ar1 = [2, 1, 9, 5, 7];
+// let count = 1;
+// for(let ll = 0; ll < ar1.length; ll ++){
+// for(let pp = ll; pp <ar1.length; pp ++){
+//   if(ar1[ll] > ar1[pp]){
+//     let temp = ar1[ll];
+//     ar1[ll] = ar1[pp];
+//     ar1[pp] = temp;
+//   }
+//   count ++;
+// }
+// }
+
+// console.log("SORTED-COUNTED:", count)
+// console.log("SORT:" ,ar1);
+
+//object
+
+// let person = {
+//   firstname : 'Naraa',
+//   lastname : 'Dorj',
+//   age : 22,
+//   address : {district: 'HUD',
+//   },
+//   score: [80, 90, 100]
+// hevle: function(){
+//   console.log("Name:", person.firstname);
+// }
+// };
+
+// let person1 = {
+//   firstname : 'Saraa',
+//   lastname : 'Dorjoo',
+//   age : 23,
+//   address : {district: 'CHD',
+//   },
+//   score: [80, 90, 100]
+// hevle: function(){
+//   console.log("Name:", person.firstname);
+// }
+// };
+
+// console.log("Person", person);
+// console.log("Person-name:", person.firstname);
+// console.log("Person-ovog:", person.lastname);
+// console.log("Person-age:", person.age);
+// console.log("person-nas:", person["age"]);
+// console.log("Hayag:", person.address.district);
+
+let rabbit = {
+name: 'bunny',
+color: 'white',
+};
+
+let mouse = {
+  name: 'jerry',
+  color: 'brown',
+};
+
+let marmot = {
+  name: 'walter',
+  color: 'yellow',
+};
+
+let animals = [rabbit, mouse, marmot];
+
+console.log(animals[0],name);
+
+for(let index = 0; index < animals.length; index ++) {
+  console.log("Name:", animals[index].name);
+}
