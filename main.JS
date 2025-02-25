@@ -671,24 +671,81 @@ console.log("==========================");
 
 //bodlogo-2
 
-cc = [0]
-
-for(ff = 0 ; ff < students.length, ff ++){
-  if(students[ff].gender > length){
-    cc = cc + students[ff];
+let eregtei = 0;
+let emegtei = 0;
+for( let p = 0; p < students.length; p++){
+  if(students[p].gender === "male"){
+    eregtei++
+  }else{
+    emegtei++
   }
 }
-
-// console.log(cc)
-
+console.log("eregtei:", eregtei);
+console.log("emegtei:", emegtei);
+console.log("======================")
 //bodlogo-4
 
 aa = 0;
 
-for (let lo = 0, lo < students.length, a++) {
-  if (students[a].age >= 21) {
-    a = a + students[a];
+for (let i = 0; i < students.length; i ++) {
+  if (students[i].age >= 21) {
+    aa ++;
   }
 }
 
-console.log("21-ээс дээш настай оюутан: ", a);
+console.log("21-ээс дээш настай оюутан: ", aa);
+
+console.log("========================")
+
+//bodlogo-5
+
+dd = 0;
+
+for (let q = 0; q < students.length; q ++){
+  if(students[q].points >= 60){
+    dd ++;  
+  }
+}
+
+console.log("60-аас дээш оноо авсан оюутан:", dd)
+console.log("==================================")
+
+//bodlogo-3
+
+dundaj = 0;
+niit = 0;
+
+for(let kb = 0; kb < students.length; kb++){
+niit += students[kb].age;
+dundaj = niit / students.length;
+}
+
+console.log("Dundaj nas:", dundaj);
+
+//bodlogo-6
+
+let oddcount = 0;
+for(let k = 0; k < 11; k++){
+  let too = k;
+  while(too !== 0){
+  let digitt = too % 10;
+  if(digitt %2 === 1){
+oddcount++
+  }
+  too = (too - digitt) /10
+  }
+}
+
+console.log("Sondgoi too:",oddcount)
+
+//bodlogo-7
+
+let www = [1, 4, 6, 9, 11];
+let ttt = [];
+let j = 0;
+for(let ko = www.length - 1; ko >= 0; ko--){
+  console.log(www[ko])
+}
+
+
+
