@@ -603,154 +603,246 @@
 // console.log("person-nas:", person["age"]);
 // console.log("Hayag:", person.address.district);
 
-let rabbit = {
-  name: "bunny",
-  color: "white",
-};
+// let rabbit = {
+//   name: "bunny",
+//   color: "white",
+// };
 
-let mouse = {
-  name: "jerry",
-  color: "brown",
-};
+// let mouse = {
+//   name: "jerry",
+//   color: "brown",
+// };
 
-let marmot = {
-  name: "walter",
-  color: "yellow",
-};
+// let marmot = {
+//   name: "walter",
+//   color: "yellow",
+// };
 
-let animals = [rabbit, mouse, marmot];
+// let animals = [rabbit, mouse, marmot];
 
-console.log(animals[0]);
+// console.log(animals[0]);
 
-for (let index = 0; index < animals.length; index++) {
-  console.log("Name:", animals[index].name);
-}
+// for (let index = 0; index < animals.length; index++) {
+//   console.log("Name:", animals[index].name);
+// }
 
-console.log("===========================================");
+// console.log("===========================================");
 
-//homework
+// //homework
 
-let students = [
-  {
-    name: "Сэд-Эрдэнэ",
-    age: 19,
-    gender: "male",
-    points: 70,
-  },
-  {
-    name: "Индра",
-    age: 19,
-    gender: "female",
-    points: 50,
-  },
-  {
-    name: "Хатнаа",
-    age: 21,
-    gender: "female",
-    points: 99,
-  },
-  {
-    name: "Тэмүүлэн",
-    age: 23,
-    gender: "male",
-    points: 55,
-  },
-  {
-    name: "Намуун",
-    age: 23,
-    gender: "female",
-    points: 85,
-  },
+// let students = [
+//   {
+//     name: "Сэд-Эрдэнэ",
+//     age: 19,
+//     gender: "male",
+//     points: 70,
+//   },
+//   {
+//     name: "Индра",
+//     age: 19,
+//     gender: "female",
+//     points: 50,
+//   },
+//   {
+//     name: "Хатнаа",
+//     age: 21,
+//     gender: "female",
+//     points: 99,
+//   },
+//   {
+//     name: "Тэмүүлэн",
+//     age: 23,
+//     gender: "male",
+//     points: 55,
+//   },
+//   {
+//     name: "Намуун",
+//     age: 23,
+//     gender: "female",
+//     points: 85,
+//   },
+// ];
+
+// //bodlogo-1
+
+// console.log(students[0]);
+
+// console.log("==========================");
+
+// //bodlogo-2
+
+// let eregtei = 0;
+// let emegtei = 0;
+// for (let p = 0; p < students.length; p++) {
+//   if (students[p].gender === "male") {
+//     eregtei++;
+//   } else {
+//     emegtei++;
+//   }
+// }
+// console.log("eregtei:", eregtei);
+// console.log("emegtei:", emegtei);
+// console.log("======================");
+// //bodlogo-4
+
+// aa = 0;
+
+// for (let i = 0; i < students.length; i++) {
+//   if (students[i].age >= 21) {
+//     aa++;
+//   }
+// }
+
+// console.log("21-ээс дээш настай оюутан: ", aa);
+
+// console.log("========================");
+
+// //bodlogo-5
+
+// dd = 0;
+
+// for (let q = 0; q < students.length; q++) {
+//   if (students[q].points >= 60) {
+//     dd++;
+//   }
+// }
+
+// console.log("60-аас дээш оноо авсан оюутан:", dd);
+// console.log("==================================");
+
+// //bodlogo-3
+
+// dundaj = 0;
+// niit = 0;
+
+// for (let kb = 0; kb < students.length; kb++) {
+//   niit += students[kb].age;
+//   dundaj = niit / students.length;
+// }
+
+// console.log("Dundaj nas:", dundaj);
+
+// //angid
+
+// let oddcount = 0;
+// for (let k = 0; k < 11; k++) {
+//   let too = k;
+//   while (too !== 0) {
+//     let digitt = too % 10;
+//     if (digitt % 2 === 1) {
+//       oddcount++;
+//     }
+//     too = (too - digitt) / 10;
+//   }
+// }
+
+// console.log("Sondgoi too:", oddcount);
+
+// //bodlogo-7
+
+// let www = [1, 4, 6, 9, 11];
+// let ttt = [];
+// let j = 0;
+// for (let ko = www.length - 1; ko >= 0; ko--) {
+//   console.log(www[ko]);
+// }
+
+// //bodlogo-8
+
+// let x = 3;
+// output = 0;
+// toot = [2, 3, 5, 8, 3];
+
+// for (let iii = 0; 0 < iii.length; iii++) {}
+
+//bodlogo- 2/26
+
+let products = [
+  {name : "Гурил", price : 3500, quantity : 6},
+  {name : "Сүү", price : 3500, quantity : 2},
+  {name : "Өндөг", price : 500, quantity : 30},
+  {name : "Талх", price : 2000, quantity : 4},
+  {name : "Цагаан будаа", price : 4000, quantity : 3},
+  {name : "Элсэн чихэр", price : 3000, quantity :2},
+  {name : "Давс", price : 1000, quantity: 1},
+  {name: "Цай", price : 5000, quantity: 2},
+  {name : "Самар", price : 5000, quantity: 1},
+  {name : "Жимс", price : 6000, quantity : 5},
+  {name : "Ногоо", price : 2500, quantity : 7},
+  {name : "Шоколад", price : 7000, quantity : 3}
 ];
 
 //bodlogo-1
+console.log('name:')
+for(let a = 0; a < products.length; a++){
+  console.log(products[a].name)
+}
 
-console.log(students[0]);
-
-console.log("==========================");
+console.log("==============================")
 
 //bodlogo-2
-
-let eregtei = 0;
-let emegtei = 0;
-for (let p = 0; p < students.length; p++) {
-  if (students[p].gender === "male") {
-    eregtei++;
-  } else {
-    emegtei++;
-  }
+let niitb = 0;
+for(let b = 0; b <products.length; b++){
+  niitb += products[b].quantity
 }
-console.log("eregtei:", eregtei);
-console.log("emegtei:", emegtei);
-console.log("======================");
-//bodlogo-4
-
-aa = 0;
-
-for (let i = 0; i < students.length; i++) {
-  if (students[i].age >= 21) {
-    aa++;
-  }
-}
-
-console.log("21-ээс дээш настай оюутан: ", aa);
-
-console.log("========================");
-
-//bodlogo-5
-
-dd = 0;
-
-for (let q = 0; q < students.length; q++) {
-  if (students[q].points >= 60) {
-    dd++;
-  }
-}
-
-console.log("60-аас дээш оноо авсан оюутан:", dd);
-console.log("==================================");
+console.log("Нийт тоо ширхэг:", niitb);
+console.log("=================")
 
 //bodlogo-3
-
-dundaj = 0;
-niit = 0;
-
-for (let kb = 0; kb < students.length; kb++) {
-  niit += students[kb].age;
-  dundaj = niit / students.length;
+let niitc = 0;
+for(let c = 0; c < products.length; c++){
+  niitc += products[c].price
 }
+console.log("Нийт үнийн дүн:", niitc)
+console.log("==========================")
+//bodlogo-4
+console.log("3000-аас дээш үнэтэй бүтээгдэхүүн:")
+for(let d = 0; d < products.length; d++){
+  if(products[d].price >= 3000){
+    console.log(products[d].name, products[d].price)
+  }
+}
+console.log("===============================")
 
-console.log("Dundaj nas:", dundaj);
+//bodlogo-7
+console.log("5-аас бага тоотой бүтээгдэхүүн:")
+for(let e = 0; e < products.length; e++){
+  if(products[e].quantity < 5){
+    console.log(products[e].name, products[e].quantity)
+  }
+}
+console.log("===============================")
 
-//bodlogo-6
+// bodlogo-5
 
-let oddcount = 0;
-for (let k = 0; k < 11; k++) {
-  let too = k;
-  while (too !== 0) {
-    let digitt = too % 10;
-    if (digitt % 2 === 1) {
-      oddcount++;
-    }
-    too = (too - digitt) / 10;
+let lowestPrice = 0;
+
+for(let g = 0; g < products.length; g++){
+  if(products[g].price < lowestPrice.price){
+    lowestPrice === products[g];
   }
 }
 
-console.log("Sondgoi too:", oddcount);
+console.log(lowestPrice)
 
-//bodlogo-7
-
-let www = [1, 4, 6, 9, 11];
-let ttt = [];
-let j = 0;
-for (let ko = www.length - 1; ko >= 0; ko--) {
-  console.log(www[ko]);
-}
+//Анхны тоо 6n - 1 / 6n + 1
 
 //bodlogo-8
 
-let x = 3;
-output = 0;
-toot = [2, 3, 5, 8, 3];
+let i = "Талх";
 
-for (let iii = 0; 0 < iii.length; iii++) {}
+for(let h = 0; h < products.length; h++){
+if(products[h].name === i){
+  console.log(i)
+}}
+
+
+//function
+
+const printName = (list) =>{
+  for(let l = 0; l < list.length; l++){
+    console.log(list[l].name);
+  }
+};
+
+printName(products)
