@@ -772,77 +772,192 @@ let products = [
   {name : "Шоколад", price : 7000, quantity : 3}
 ];
 
-//bodlogo-1
-console.log('name:')
-for(let a = 0; a < products.length; a++){
-  console.log(products[a].name)
+// //bodlogo-1
+// console.log('name:')
+// for(let a = 0; a < products.length; a++){
+//   console.log(products[a].name)
+// }
+
+// console.log("==============================")
+
+// //bodlogo-2
+// let niitb = 0;
+// for(let b = 0; b <products.length; b++){
+//   niitb += products[b].quantity
+// }
+// console.log("Нийт тоо ширхэг:", niitb);
+// console.log("=================")
+
+// //bodlogo-3
+// let niitc = 0;
+// for(let c = 0; c < products.length; c++){
+//   niitc += products[c].price
+// }
+// console.log("Нийт үнийн дүн:", niitc)
+// console.log("==========================")
+// //bodlogo-4
+
+// console.log("3000-аас дээш үнэтэй бүтээгдэхүүн:")
+// for(let d = 0; d < products.length; d++){
+//   if(products[d].price >= 3000){
+//     console.log(products[d].name, products[d].price)
+//   }
+// }
+// console.log("===============================")
+
+// //bodlogo-7
+// console.log("5-аас бага тоотой бүтээгдэхүүн:")
+// for(let e = 0; e < products.length; e++){
+//   if(products[e].quantity < 5){
+//     console.log(products[e].name, products[e].quantity)
+//   }
+// }
+// console.log("===============================")
+
+// // bodlogo-5
+
+// let lowestPrice = 0;
+
+// for(let g = 0; g < products.length; g++){
+//   if(products[g].price < lowestPrice.price){
+//     lowestPrice === products[g];
+//   }
+// }
+
+// console.log(lowestPrice)
+
+// //Анхны тоо 6n - 1 / 6n + 1
+
+// //bodlogo-8
+
+// let i = "Талх";
+
+// for(let h = 0; h < products.length; h++){
+// if(products[h].name === i){
+//   console.log(i)
+// }}
+
+
+// //function
+
+// const printName = (list) =>{
+//   for(let l = 0; l < list.length; l++){
+//     console.log(list[l].name);
+//   }
+// };
+
+// printName(products)
+
+//02-27 functions:
+
+console.log("functions")
+
+
+
+function isEven(inputNumber){
+  if(inputNumber % 2 === 0){
+    return true;
+  }else{return false}
+}
+let x = 100;
+if(isEven(x)){
+  console.log("even")
+}else{console.log("odd")
 }
 
-console.log("==============================")
-
-//bodlogo-2
-let niitb = 0;
-for(let b = 0; b <products.length; b++){
-  niitb += products[b].quantity
+let arr = [1, 2, 3, 4, 5];
+for(let index = 0; index <arr.length; index++){
+  if(x % 2 ===0){
+    console.log("even", arr[index]);
+  }else{console.log("odd", arr[index]);
+  }
 }
-console.log("Нийт тоо ширхэг:", niitb);
+
+function tegshOrSondgoi(inputNumber) {
+  if(inputNumber % 2 === 0){
+    console.log("even", inputNumber);
+  }else{console.log("odd", inputNumber);
+  }
+}
+
+console.log("=======================")
+
+let arr2 = [6, 7, 8, 9, 10];
+for(let index = 0; index <arr2.length; index++){
+  tegshOrSondgoi(arr2[index])
+}
+
+let i = isEven(11);
+console.log(i)
+
+// function nemeh(a, b){  //ES5 bichiglel //declaration
+// return a + b}
+
+// let result = nemeh(5, 2)
+
+// console.log(result)
+
+
+//bodlogo-5
+
+let hamgiinHyamd = products[0];
+for(let toologch = 1; toologch < products.length; toologch++){
+  if(products[toologch].price < hamgiinHyamd.price){
+    hamgiinHyamd = products[toologch];
+  }
+}
+
+console.log(hamgiinHyamd)
+
 console.log("=================")
 
-//bodlogo-3
-let niitc = 0;
-for(let c = 0; c < products.length; c++){
-  niitc += products[c].price
-}
-console.log("Нийт үнийн дүн:", niitc)
-console.log("==========================")
 //bodlogo-4
-console.log("3000-аас дээш үнэтэй бүтээгдэхүүн:")
-for(let d = 0; d < products.length; d++){
-  if(products[d].price >= 3000){
-    console.log(products[d].name, products[d].price)
-  }
-}
-console.log("===============================")
 
-//bodlogo-7
-console.log("5-аас бага тоотой бүтээгдэхүүн:")
-for(let e = 0; e < products.length; e++){
-  if(products[e].quantity < 5){
-    console.log(products[e].name, products[e].quantity)
-  }
-}
-console.log("===============================")
 
-// bodlogo-5
-
-let lowestPrice = 0;
-
-for(let g = 0; g < products.length; g++){
-  if(products[g].price < lowestPrice.price){
-    lowestPrice === products[g];
+const lessPrice = (param, price) => {
+  for (let i = 0; i < param.length; i++){
+    if(param[i].price > price){
+      console.log(param[i]);
+    }
   }
 }
 
-console.log(lowestPrice)
+lessPrice(products, 3000);
 
-//Анхны тоо 6n - 1 / 6n + 1
+const first = "123";
 
-//bodlogo-8
+console.log({first});
 
-let i = "Талх";
+//arrow function //ES6 bichiglel
 
-for(let h = 0; h < products.length; h++){
-if(products[h].name === i){
-  console.log(i)
-}}
+function nemeh(a, b){
+  return a + b;
+}
 
+let sum = 1000; //declaration
+let result = nemeh(10, 20);
+console.log("ADD:", result);
+//ES6
+// expression bichiglel
+const add = (a, b) => {
+  return a + b};
+;
+let urdun = add(50, 60);
+console.log("ARROW-ADD:", urdun)
 
-//function
-
-const printName = (list) =>{
-  for(let l = 0; l < list.length; l++){
-    console.log(list[l].name);
-  }
+const kira = {
+  age: 25,
 };
 
-printName(products)
+kira.age = 30;
+
+console.log(kira.age)
+
+const nas = [30, 20, 10];
+nas[0] = 100;
+
+console.log(nas[0]);
+
+const boloroo = {...kira};
+
+console.log(boloroo)
