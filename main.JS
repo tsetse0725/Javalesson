@@ -756,22 +756,6 @@
 // for (let iii = 0; 0 < iii.length; iii++) {}
 
 //bodlogo- 2/26
-
-let products = [
-  {name : "Гурил", price : 3500, quantity : 6},
-  {name : "Сүү", price : 3500, quantity : 2},
-  {name : "Өндөг", price : 500, quantity : 30},
-  {name : "Талх", price : 2000, quantity : 4},
-  {name : "Цагаан будаа", price : 4000, quantity : 3},
-  {name : "Элсэн чихэр", price : 3000, quantity :2},
-  {name : "Давс", price : 1000, quantity: 1},
-  {name: "Цай", price : 5000, quantity: 2},
-  {name : "Самар", price : 5000, quantity: 1},
-  {name : "Жимс", price : 6000, quantity : 5},
-  {name : "Ногоо", price : 2500, quantity : 7},
-  {name : "Шоколад", price : 7000, quantity : 3}
-];
-
 // //bodlogo-1
 // console.log('name:')
 // for(let a = 0; a < products.length; a++){
@@ -780,184 +764,1604 @@ let products = [
 
 // console.log("==============================")
 
-// //bodlogo-2
-// let niitb = 0;
-// for(let b = 0; b <products.length; b++){
-//   niitb += products[b].quantity
-// }
-// console.log("Нийт тоо ширхэг:", niitb);
-// console.log("=================")
+// // //bodlogo-2
+// // let niitb = 0;
+// // for(let b = 0; b <products.length; b++){
+// //   niitb += products[b].quantity
+// // }
+// // console.log("Нийт тоо ширхэг:", niitb);
+// // console.log("=================")
 
-// //bodlogo-3
-// let niitc = 0;
-// for(let c = 0; c < products.length; c++){
-//   niitc += products[c].price
+// // //bodlogo-3
+// // let niitc = 0;
+// // for(let c = 0; c < products.length; c++){
+// //   niitc += products[c].price
+// // }
+// // console.log("Нийт үнийн дүн:", niitc)
+// // console.log("==========================")
+// // //bodlogo-4
+
+// // console.log("3000-аас дээш үнэтэй бүтээгдэхүүн:")
+// // for(let d = 0; d < products.length; d++){
+// //   if(products[d].price >= 3000){
+// //     console.log(products[d].name, products[d].price)
+// //   }
+// // }
+// // console.log("===============================")
+
+// // //bodlogo-7
+// // console.log("5-аас бага тоотой бүтээгдэхүүн:")
+// // for(let e = 0; e < products.length; e++){
+// //   if(products[e].quantity < 5){
+// //     console.log(products[e].name, products[e].quantity)
+// //   }
+// // }
+// // console.log("===============================")
+
+// // // bodlogo-5
+
+// // let lowestPrice = 0;
+
+// // for(let g = 0; g < products.length; g++){
+// //   if(products[g].price < lowestPrice.price){
+// //     lowestPrice === products[g];
+// //   }
+// // }
+
+// // console.log(lowestPrice)
+
+// // //Анхны тоо 6n - 1 / 6n + 1
+
+// // //bodlogo-8
+
+// // let i = "Талх";
+
+// // for(let h = 0; h < products.length; h++){
+// // if(products[h].name === i){
+// //   console.log(i)
+// // }}
+
+// // //function
+
+// // const printName = (list) =>{
+// //   for(let l = 0; l < list.length; l++){
+// //     console.log(list[l].name);
+// //   }
+// // };
+
+// // printName(products)
+
+// //02-27 functions:
+
+// console.log("functions");
+
+// function isEven(inputNumber) {
+//   if (inputNumber % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
 // }
-// console.log("Нийт үнийн дүн:", niitc)
-// console.log("==========================")
+// let x = 100;
+// if (isEven(x)) {
+//   console.log("even");
+// } else {
+//   console.log("odd");
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// for (let index = 0; index < arr.length; index++) {
+//   if (x % 2 === 0) {
+//     console.log("even", arr[index]);
+//   } else {
+//     console.log("odd", arr[index]);
+//   }
+// }
+
+// function tegshOrSondgoi(inputNumber) {
+//   if (inputNumber % 2 === 0) {
+//     console.log("even", inputNumber);
+//   } else {
+//     console.log("odd", inputNumber);
+//   }
+// }
+
+// console.log("=======================");
+
+// let arr2 = [6, 7, 8, 9, 10];
+// for (let index = 0; index < arr2.length; index++) {
+//   tegshOrSondgoi(arr2[index]);
+// }
+
+// let i = isEven(11);
+// console.log(i);
+
+// // function nemeh(a, b){  //ES5 bichiglel //declaration
+// // return a + b}
+
+// // let result = nemeh(5, 2)
+
+// // console.log(result)
+
+// //bodlogo-5
+
+// let hamgiinHyamd = products[0];
+// for (let toologch = 1; toologch < products.length; toologch++) {
+//   if (products[toologch].price < hamgiinHyamd.price) {
+//     hamgiinHyamd = products[toologch];
+//   }
+// }
+
+// console.log(hamgiinHyamd);
+
+// console.log("=================");
+
+// //bodlogo-6
+
+// let hamgiinIhTootoi = products[0];
+// for (let tool = 1; tool < products.length; tool++) {
+//   if (products[tool].quantity > hamgiinIhTootoi.quantity) {
+//     hamgiinIhTootoi = products[tool];
+//   }
+// }
+
+// console.log(hamgiinIhTootoi);
+
 // //bodlogo-4
 
-// console.log("3000-аас дээш үнэтэй бүтээгдэхүүн:")
-// for(let d = 0; d < products.length; d++){
-//   if(products[d].price >= 3000){
-//     console.log(products[d].name, products[d].price)
-//   }
-// }
-// console.log("===============================")
-
-// //bodlogo-7
-// console.log("5-аас бага тоотой бүтээгдэхүүн:")
-// for(let e = 0; e < products.length; e++){
-//   if(products[e].quantity < 5){
-//     console.log(products[e].name, products[e].quantity)
-//   }
-// }
-// console.log("===============================")
-
-// // bodlogo-5
-
-// let lowestPrice = 0;
-
-// for(let g = 0; g < products.length; g++){
-//   if(products[g].price < lowestPrice.price){
-//     lowestPrice === products[g];
-//   }
-// }
-
-// console.log(lowestPrice)
-
-// //Анхны тоо 6n - 1 / 6n + 1
-
-// //bodlogo-8
-
-// let i = "Талх";
-
-// for(let h = 0; h < products.length; h++){
-// if(products[h].name === i){
-//   console.log(i)
-// }}
-
-
-// //function
-
-// const printName = (list) =>{
-//   for(let l = 0; l < list.length; l++){
-//     console.log(list[l].name);
+// const lessPrice = (param, price) => {
+//   for (let i = 0; i < param.length; i++) {
+//     if (param[i].price > price) {
+//       console.log(param[i]);
+//     }
 //   }
 // };
 
-// printName(products)
+// lessPrice(products, 3000);
 
-//02-27 functions:
+// const first = "123";
 
-console.log("functions")
+// console.log({ first });
 
+// //arrow function //ES6 bichiglel
 
+// function nemeh(a, b) {
+//   return a + b;
+// }
 
-function isEven(inputNumber){
-  if(inputNumber % 2 === 0){
-    return true;
-  }else{return false}
-}
-let x = 100;
-if(isEven(x)){
-  console.log("even")
-}else{console.log("odd")
-}
+// let sum = 1000; //declaration
+// let result = nemeh(10, 20);
+// console.log("ADD:", result);
 
-let arr = [1, 2, 3, 4, 5];
-for(let index = 0; index <arr.length; index++){
-  if(x % 2 ===0){
-    console.log("even", arr[index]);
-  }else{console.log("odd", arr[index]);
+// //ES6
+// // expression bichiglel
+
+// const add = (a, b) => {
+//   return a + b;
+// };
+// let urdun = add(50, 60);
+// console.log("ARROW-ADD:", urdun);
+
+// const kira = {
+//   age: 25,
+// };
+
+// kira.age = 30;
+
+// console.log(kira.age);
+
+// const nas = [30, 20, 10];
+// nas[0] = 100;
+
+// console.log(nas[0]);
+
+// const boloroo = { ...kira };
+
+// console.log(boloroo);
+
+//2/28-ний бодлого
+
+const employees = [
+  { id: 1, name: "Бат", age: 25, position: "Developer", salary: 2500000 },
+  { id: 2, name: "Сараа", age: 30, position: "Manager", salary: 3500000 },
+  { id: 3, name: "Дорж", age: 22, position: "Intern", salary: 1000000 },
+  { id: 4, name: "Тэмүүлэн", age: 40, position: "CEO", salary: 6000000 },
+  { id: 5, name: "Одмаа", age: 28, position: "Designer", salary: 2700000 },
+  { id: 6, name: "Ганбаа", age: 35, position: "HR", salary: 2200000 },
+  { id: 7, name: "Мөнхөө", age: 29, position: "QA engineer", salary: 2400000 },
+  {
+    id: 8,
+    name: "Номин",
+    age: 33,
+    position: "Project manager",
+    salary: 3700000,
+  },
+  { id: 9, name: "Хишигээ", age: 24, position: "Marketing", salary: 2300000 },
+  {
+    id: 10,
+    name: "Төгөлдөр",
+    age: 27,
+    position: "Backend developer",
+    salary: 2800000,
+  },
+];
+
+console.log(
+  "Бодлого-1: Өгөгдсөн ажилчдын мэдээллийг дарааллаар нь хэвлэх функц"
+);
+
+// function printEmloyee(employee) {
+//   console.log(
+//     `id: ${employee.id}, Name: ${employee.name}, age : ${employee.age}, position: ${employee.age}, salary : ${employee.salary}`
+//   );
+// }
+
+function printEmployees(employeess) {
+  for (let i = 0; i < employeess.length; i++) {
+    const employee = employeess[i];
+    console.log(
+      `ID: ${employee.id}, Name: ${employee.name}, Age: ${employee.age}, Position: ${employee.position}, Salary: ${employee.salary}`
+    );
   }
 }
 
-function tegshOrSondgoi(inputNumber) {
-  if(inputNumber % 2 === 0){
-    console.log("even", inputNumber);
-  }else{console.log("odd", inputNumber);
+printEmployees(employees);
+
+console.log("===============================================");
+
+console.log("Бодлого-2: 30-аас дээш настай ажилчдыг олох функц бич.");
+
+// function findEmployeesByAge(age) {
+//   const findEmployees = [];
+//   let findIndex = 0;
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].age >= age) {
+//       findEmployees[findIndex] = employees[i];
+//       findIndex++;
+//     }
+//   }
+//   return findEmployees;
+// }
+
+function findEmployeesOver30(employees1) {
+  const over30Employees = [];
+  let index = 0; // Шинэ массивт элементийг оруулах индекс
+  for (let i = 0; i < employees1.length; i++) {
+    if (employees1[i].age >= 30) {
+      over30Employees[index] = employees1[i]; // push-ийн оронд индексээр оруулах
+      index++; // Индексийг нэмэгдүүлэх
+    }
+  }
+  return over30Employees;
+}
+
+const employeesOver30 = findEmployeesOver30(employees);
+console.log(employeesOver30);
+
+console.log("===============================================");
+
+console.log("Бодлого-3: Ажилчдын дундаж насыг олох функц бич?");
+
+// // function averageAge() {
+// //   let sum = 0;
+// //   for (let i = 0; i < employees.length; i++) {
+// //     sum += employees[i].age;
+// //   }
+// //   return sum / employees.length;
+// }
+
+function calculateAverageAge(employees2) {
+  if (employees2.length === 0) {
+    return 0;
+  }
+
+  let totalAge = 0;
+  for (let i = 0; i < employees2.length; i++) {
+    totalAge += employees2[i].age;
+  }
+
+  return totalAge / employees2.length;
+}
+
+const averageAge = calculateAverageAge(employees);
+console.log("Ажилчдын дундаж нас:", averageAge);
+
+console.log("===============================================");
+
+console.log("Бодлого-4: Developer албан тушаалтай ажилчдыг олох функц бич:");
+
+// function countByPosition(position) {
+//   let count = 0;
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].position === position) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+function findDevelopers(employees3) {
+  const developers = [];
+  let index = 0; // Шинэ массивт элементийг оруулах индекс
+  for (let i = 0; i < employees3.length; i++) {
+    if (
+      employees3[i].position === "Developer" ||
+      employees3[i].position === "Backend developer"
+    ) {
+      developers[index] = employees3[i]; // push-ийн оронд индексээр оруулах
+      index++; // Индексийг нэмэгдүүлэх
+    }
+  }
+  return developers;
+}
+
+const developerEmployees = findDevelopers(employees);
+console.log(developerEmployees);
+
+console.log("===============================================");
+
+console.log("Бодлого-5: Нийт ажилчдын тоог хэвлэх функц бич:");
+
+// function countEmployees() {
+//   return employees.length;
+// }
+
+function printEmployeeCount(employees4) {
+  const employeeCount = employees4.length;
+  console.log("Нийт ажилчдын тоо:", employeeCount);
+}
+
+printEmployeeCount(employees);
+
+console.log("===============================================");
+
+console.log("Бодлого-6: Бүх ажилчдын цалинг 10%-иар нэмэгдүүлэх функц бич.");
+
+// function increaseSalary() {
+//   for (let i = 0; i < employees.length; i++) {
+//     employees[i].salary += employees[i].salary * 0.1;
+//   }
+// }
+
+function increaseAllSalaries(employees5) {
+  for (let i = 0; i < employees5.length; i++) {
+    employees5[i].salary += employees5[i].salary * 0.1;
   }
 }
 
-console.log("=======================")
+increaseAllSalaries(employees);
 
-let arr2 = [6, 7, 8, 9, 10];
-for(let index = 0; index <arr2.length; index++){
-  tegshOrSondgoi(arr2[index])
+console.log(employees);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого-7: Бүх ажилчдын нийт цалингийн нийлбэрийг олох функц бич."
+);
+
+// function sumSalary() {
+//   let sum = 0;
+//   for (let i = 0; i < employees.length; i++) {
+//     sum += employees[i].salary;
+//   }
+//   return sum;
+// }
+
+function calculateTotalSalary(employees6) {
+  let totalSalary = 0;
+  for (let i = 0; i < employees6.length; i++) {
+    totalSalary += employees6[i].salary;
+  }
+  return totalSalary;
 }
 
-let i = isEven(11);
-console.log(i)
+const totalSalary = calculateTotalSalary(employees);
+console.log("Нийт ажилчдын цалингийн нийлбэр:", totalSalary);
 
-// function nemeh(a, b){  //ES5 bichiglel //declaration
-// return a + b}
+console.log("===============================================");
 
-// let result = nemeh(5, 2)
+console.log("Бодлого-8: Тухайн ажилтан байгаа эсэхийг шалгах функц бич.");
 
-// console.log(result)
+// function isEmployeeExist(name) {
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].name === name) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
 
+function isEmployeeExists(employees7, employeeName) {
+  for (let i = 0; i < employees7.length; i++) {
+    if (employees7[i].name === employeeName) {
+      return true;
+    }
+  }
+  return false;
+}
 
-//bodlogo-5
+const employeeToCheck = "Номин";
+const employeeExists = isEmployeeExists(employees, employeeToCheck);
 
-let hamgiinHyamd = products[0];
-for(let toologch = 1; toologch < products.length; toologch++){
-  if(products[toologch].price < hamgiinHyamd.price){
-    hamgiinHyamd = products[toologch];
+if (employeeExists) {
+  console.log(`${employeeToCheck} нэртэй ажилтан байна.`);
+} else {
+  console.log(`${employeeToCheck} нэртэй ажилтан байхгүй байна.`);
+}
+
+console.log("===============================================");
+
+console.log("Бодлого-9: Ажилчдын бүх албан тушаалыг массив болгон гарга?");
+
+const positions = new Array(employees.length);
+for (let i = 0; i < employees.length; i++) {
+  positions[i] = employees[i].position;
+}
+console.log(positions);
+
+console.log("===============================================");
+
+console.log("Бодлого-10: Ажилчдын дундаж цалинг олох функц бич?");
+
+function calculateAverageSalary(employees8) {
+  if (employees8 === 0) {
+    return 0;
+  }
+  let totalSalary = 0;
+  for (let i = 0; i < employees8.length; i++) {
+    totalSalary += employees8[i].salary;
+  }
+  return totalSalary / employees8.length;
+}
+
+const averageSalary = calculateAverageSalary(employees);
+console.log("Ажилчдын дундаж цалин:", averageSalary);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого-11: Тухайн албан тушаалтай ажилтан хэдэн ажилтан байгааг тоолох функц бич?"
+);
+
+function countEmployeesByPosition(employees, positionToCount) {
+  let count = 0;
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].position === positionToCount) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const positionToCount = "Developer";
+const employeeCount = countEmployeesByPosition(employees, positionToCount);
+console.log(`${positionToCount} албан тушаалтай ажилтны тоо: ${employeeCount}`);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого-12: Ажилчдын мэдээллийг зөвхөн нэр, албан тушаал, нас гэсэн шинэ массив болгон буцаа."
+);
+
+function simplifyEmployeeData(employees) {
+  const simplifiedEmployees = new Array(employees.length);
+  for (let i = 0; i < employees.length; i++) {
+    simplifiedEmployees[i] = {
+      name: employees[i].name,
+      position: employees[i].position,
+      age: employees[i].age,
+    };
+  }
+  return simplifiedEmployees;
+}
+
+const simplifiedData = simplifyEmployeeData(employees);
+console.log(simplifiedData);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого-13: Тухайн ажилтан Exists эсэхийг ID-аар нь шалгах функц бич?"
+);
+
+function employeeExistss(employees, employeeId) {
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].id === employeeId) {
+      return true;
+    }
+  }
+  return false;
+}
+
+const employeeIdToCheck = 5;
+const exists = employeeExistss(employees, employeeIdToCheck);
+console.log(`ID ${employeeIdToCheck} бүхий ажилтан: ${exists}`);
+
+const nonExistentId = 11;
+const notExists = employeeExistss(employees, nonExistentId);
+console.log(`ID ${nonExistentId} бүхий ажилтан: ${notExists}`);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого-14: Нас нь 25-аас дээш, цалин нь 3 сая-аас бага ажилчдыг шүүж гаргах функц бич."
+);
+
+function filterEmployees(employees) {
+  let count = 0;
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].age > 25 && employees[i].salary < 3000000) {
+      count++;
+    }
+  }
+
+  const filteredEmployees = new Array(count);
+  let index = 0;
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].age > 25 && employees[i].salary < 3000000) {
+      filteredEmployees[index] = employees[i];
+      index++;
+    }
+  }
+  return filteredEmployees;
+}
+
+const filteredData = filterEmployees(employees);
+console.log(filteredData);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого-15: Өгөгдсөн насны хүрээнд (жишээ нь, 25-35 нас) багтах ажилчдыг шүүж гаргах функц бич."
+);
+
+function filterEmployeesByAgeRange(employees, minAge, maxAge) {
+  let count = 0;
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].age >= minAge && employees[i].age <= maxAge) {
+      count++;
+    }
+  }
+
+  const filteredEmployees = new Array(count);
+  let index = 0;
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i].age >= minAge && employees[i].age <= maxAge) {
+      filteredEmployees[index] = employees[i];
+      index++;
+    }
+  }
+  return filteredEmployees;
+}
+
+const minAge = 30;
+const maxAge = 40;
+const filtereddData = filterEmployeesByAgeRange(employees, minAge, maxAge);
+console.log(filtereddData);
+
+console.log("===============================================");
+
+console.log("Бодлого-16: Ажилчдын ID-г массив болгон буцаах функц бич.");
+
+function getEmployeeId(employees) {
+  const employeeIds = new Array(employees.length);
+  for (let i = 0; i < employees.length; i++) {
+    employeeIds[i] = employees[i].id;
+  }
+  return employeeIds;
+}
+
+const ids = getEmployeeId(employees);
+console.log(ids);
+
+console.log("Бодлого-17: Ажилчдын цалингаар нь өсөхөөр эрэмбэлэх функц бич.");
+
+function sortBySalaryAscending(employees) {
+  employees.sort((a, b) => a.salary - b.salary);
+  return employees;
+}
+
+const sortedEmployees = sortBySalaryAscending(employees);
+console.log(sortedEmployees);
+
+console.log("===============================================");
+
+//Өмнөх бодлогуудыг функц ашиглан бодох:
+
+let products = [
+  { name: "Гурил", price: 3500, quantity: 6 },
+  { name: "Сүү", price: 3500, quantity: 2 },
+  { name: "Өндөг", price: 500, quantity: 30 },
+  { name: "Талх", price: 2000, quantity: 4 },
+  { name: "Цагаан будаа", price: 4000, quantity: 3 },
+  { name: "Элсэн чихэр", price: 3000, quantity: 2 },
+  { name: "Давс", price: 1000, quantity: 1 },
+  { name: "Цай", price: 5000, quantity: 2 },
+  { name: "Самар", price: 5000, quantity: 1 },
+  { name: "Жимс", price: 6000, quantity: 5 },
+  { name: "Ногоо", price: 2500, quantity: 7 },
+  { name: "Шоколад", price: 7000, quantity: 3 },
+];
+
+console.log("Бодлого-1: Өгөгдсөн бүтээгдэхүүний нэрийг хэвлэх функц бич?");
+
+function printProductNames(products) {
+  for (let i = 0; i < products.length; i++) {
+    console.log(products[i].name);
   }
 }
 
-console.log(hamgiinHyamd)
+printProductNames(products);
 
-console.log("=================")
+console.log("===============================================");
 
-//bodlogo-4
+console.log(
+  "Бодлого-2: Өгөгдсөн бүтээгдэхүүний нийт тоо ширхэгийг олох функц бич?"
+);
 
+function getTotalQuantity(products) {
+  let totalQuantity = 0;
+  for (let i = 0; i < products.length; i++) {
+    totalQuantity += products[i].quantity;
+  }
+  return totalQuantity;
+}
 
-const lessPrice = (param, price) => {
-  for (let i = 0; i < param.length; i++){
-    if(param[i].price > price){
-      console.log(param[i]);
+const total = getTotalQuantity(products);
+console.log("Нийт тоо ширхэг:", total);
+console.log("===============================================");
+
+console.log(
+  "Бодлого-3: Өгөгдсөн бүтээгдэхүүний нийт үнийн дүнг олох функц бич?"
+);
+
+function getTotalPrice(products) {
+  let totalPrice = 0;
+  for (let i = 0; i < products.length; i++) {
+    totalPrice += products[i].price;
+  }
+  return totalPrice;
+}
+
+const totalP = getTotalPrice(products);
+console.log("Нийт үнийн дүн:", totalP);
+console.log("===============================================");
+
+console.log(
+  "Бодлого-4: Өгөгдсөн бүтээгдэхүүний 3000₮-өөс дээш үнэтэй бүтээгдэхүүнийг хэвлэх функц бич?"
+);
+
+function printProductsDeesh3000(products) {
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price >= 3000) {
+      console.log(products[i].name, "-", products[i].price, "₮");
     }
   }
 }
 
-lessPrice(products, 3000);
+printProductsDeesh3000(products);
 
-const first = "123";
+console.log("===============================================");
 
-console.log({first});
+console.log(
+  "Бодлого-5: Өгөгдсөн бүтээгдэхүүний хамгийн хямд бүтээгдэхүүний нэрийг олж хэвлэх функц бич?"
+);
 
-//arrow function //ES6 bichiglel
+function hamgiinHyamdProduct(products) {
+  if (products.length === 0) {
+    console.log("Бүтээгдэхүүний жагсаалт хоосон байна.");
+    return;
+  }
 
-function nemeh(a, b){
-  return a + b;
+  let hyamdProduct = products[0];
+  for (let i = 1; i < products.length; i++) {
+    if (products[i].price < hyamdProduct.price) {
+      hyamdProduct = products[i];
+    }
+  }
+  console.log("Хамгийн хямд бүтээгдэхүүн: ", hyamdProduct);
 }
 
-let sum = 1000; //declaration
-let result = nemeh(10, 20);
-console.log("ADD:", result);
-//ES6
-// expression bichiglel
-const add = (a, b) => {
-  return a + b};
-;
-let urdun = add(50, 60);
-console.log("ARROW-ADD:", urdun)
+hamgiinHyamdProduct(products);
+console.log("===============================================");
 
-const kira = {
-  age: 25,
-};
+console.log(
+  "Бодлого-6: Өгөгдсөн бүтээгдэхүүний хамгийн их тоо ширхэгтэй бүтээгдэхүүнийг хэвлэх функц бич?"
+);
 
-kira.age = 30;
+function hamgiinIhTootoiProduct(products) {
+  if (products.length === 0) {
+    console.log("Бүтээгдэхүүний жагсаалт хоосон байна.");
+    return;
+  }
 
-console.log(kira.age)
+  let ihTootoiProduct = products[0];
+  for (let i = 1; i < products.length; i++) {
+    if (products[i].quantity > ihTootoiProduct.quantity) {
+      ihTootoiProduct = products[i];
+    }
+  }
+  console.log("Хамгийн их тоотой бүтээгдэхүүн: ", ihTootoiProduct);
+}
 
-const nas = [30, 20, 10];
-nas[0] = 100;
+hamgiinIhTootoiProduct(products);
 
-console.log(nas[0]);
+console.log("===============================================");
 
-const boloroo = {...kira};
+console.log(
+  "Бодлого-7: Өгөгдсөн бүтээгдэхүүний 5-аас доош үлдсэн бүтээгдэхүүнийг жагсаах функц бич?"
+);
 
-console.log(boloroo)
+function printProductDoosh5(products) {
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].quantity < 5) {
+      console.log(
+        products[i].name,
+        "-",
+        products[i].price,
+        "₮",
+        "-",
+        products[i].quantity,
+        "ш"
+      );
+    }
+  }
+}
+printProductDoosh5(products);
+console.log("===============================================");
+
+console.log(
+  "Бодлого-8: Өгөгдсөн бүтээгдэхүүн дотор Х бүтээгдэхүүн байгаа эсэхийг шалга, байвал мэдээллийг нь хэвлэх функц бич?"
+);
+
+function findPrintProduct(products, productName) {
+  let found = false;
+
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].name === productName) {
+      console.log("Бүтээгдэхүүний мэдээлэл:");
+      console.log("Нэр:", products[i].name);
+      console.log("Үнэ:", products[i].price, "₮");
+      console.log("Тоо ширхэг:", products[i].quantity);
+      found = true;
+      break;
+    }
+  }
+  if (!found) {
+    console.log(productName, "Нэр бүхий бүтээгдэхүүн олдсонгүй.");
+  }
+}
+
+findPrintProduct(products, "Талх");
+console.log("===============================================");
+
+//Өмнөх бодлого.
+
+let students = [
+  {
+    name: "Сэд-Эрдэнэ",
+    age: 19,
+    gender: "male",
+    points: 70,
+  },
+  {
+    name: "Индра",
+    age: 19,
+    gender: "female",
+    points: 50,
+  },
+  {
+    name: "Хатнаа ",
+    age: 21,
+    gender: "male",
+    points: 99,
+  },
+  {
+    name: "Тэмүүлэн",
+    age: 23,
+    gender: "male",
+    points: 55,
+  },
+  {
+    name: "Намуун",
+    age: 23,
+    gender: "female",
+    points: 85,
+  },
+];
+
+console.log("Бодлого-1: Өгөгдсөн Array-с эхний объектийг хэвлэх функц бич?");
+
+function ehniiOyutan(students) {
+  if (students.length > 0) {
+    console.log(students[0]);
+  } else {
+    console.log("Жагсаалт хоосон байна.");
+  }
+}
+
+ehniiOyutan(students);
+console.log("===============================================");
+
+console.log(
+  "Бодлого-2: Ангид хэдэн эрэгтэй, хэдэн эмэгтэй сурагч байгааг олох функц бич?"
+);
+
+function toolStudentsGender(students) {
+  let maleCount = 0;
+  let femaleCount = 0;
+
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].gender === "male") {
+      maleCount++;
+    } else if (students[i].gender === "female") {
+      femaleCount++;
+    }
+  }
+  return { male: maleCount, female: femaleCount };
+}
+
+const urdun = toolStudentsGender(students);
+console.log(`Эрэгтэй: ${urdun.male}, Эмэгтэй: ${urdun.female}`);
+console.log("===============================================");
+
+console.log("Бодлого-3: Сурагчдын насны дундажыг олох функц бич?");
+
+function nasniiDundaj(students) {
+  if (students.length === 0) {
+    return 0;
+  }
+
+  let totalAge = 0;
+  for (let i = 0; i < students.length; i++) {
+    totalAge += students[i].age;
+  }
+  return totalAge / students.length;
+}
+
+const dundajNas = nasniiDundaj(students);
+console.log(`Сурагчдын дундаж нас: ${dundajNas}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого-4: Нас нь 21-ээс дээш буюу тэнцүү сурагчийг олох функц бич?"
+);
+
+function studentsDeesh21(students) {
+  const urDun = [];
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].age >= 21) {
+      urDun.push(students[i]);
+    }
+  }
+  return urDun;
+}
+
+const students21eesDeesh = studentsDeesh21(students);
+console.log(students21eesDeesh);
+console.log("===============================================");
+
+console.log("Бодлого-5: 60-аас дээш оноо авсан сурагчдыг олох функц бич?");
+
+function students60Deesh(students) {
+  const urdUn = [];
+  let urdUnIndex = 0;
+
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].points > 60) {
+      urdUn[urdUnIndex] = students[i];
+      urdUnIndex++;
+    }
+  }
+  return urdUn;
+}
+
+const students60AasDeesh = students60Deesh(students);
+console.log(students60AasDeesh);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн эерэг тооны урвууг хэвлэх функц бич? Жишээ нь: 1234"
+);
+
+function urvuuToo(number) {
+  if (number < 0) {
+    return "Эерэг тоо оруулна уу.";
+  }
+
+  let urvuu = 0;
+  while (number > 0) {
+    const digit = number % 10;
+    urvuu = urvuu * 10 + digit;
+    number = Math.floor(number / 10);
+  }
+  return urvuu;
+}
+
+const number = 5678;
+const urvuuTooResult = urvuuToo(number);
+console.log(urvuuTooResult);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн Натурал тооны ахмад орны цифрийг олох функц бич.: Жишээ нь : 2345 output: 2"
+);
+
+function findAhmadToo(too) {
+  if (too < 10) {
+    return too;
+  }
+
+  let ahmadToo = too;
+  while (ahmadToo >= 10) {
+    ahmadToo = Math.floor(ahmadToo / 10);
+  }
+  return ahmadToo;
+}
+
+const too = 5678;
+const ahmadTooResult = findAhmadToo(number);
+console.log(ahmadTooResult);
+console.log("===============================================");
+
+console.log("Бодлого: Өгөгдсөн тооны хүрдийг хэвлэх функц бич.");
+
+function printHurd(num) {
+  for (let i = 1; i <= 10; i++) {
+    const result = num * i;
+    console.log(`${num} * ${i} = ${result}`);
+  }
+}
+
+const num = 5;
+printHurd(num);
+console.log("===============================================");
+
+console.log("өгсөн тоо анхны тоо эсэхийг олох функц бич?");
+
+function anhniiToo(toot) {
+  if (number <= 1) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(toot); i++) {
+    if (toot % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+const toot1 = 17;
+const toot2 = 20;
+
+console.log(`${toot1} анхны тоо мөн үү? ${anhniiToo(toot1)}`);
+console.log(`${toot2}анхны тоо мөн үү? ${anhniiToo(toot2)}`);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн массив дотор х тоо хэдэн удаа орсныг тоолох функц бич?"
+);
+
+function tool(arr, x) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === x) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const arr = [2, 3, 5, 8, 3];
+const x = 2;
+const tooloh = tool(arr, x);
+console.log(tooloh);
+console.log("===============================================");
+
+console.log("Бодлого: Өгөгдсөн массивыг урвуугаар хэвлэх функц бич.");
+
+function urvuuArray(arra) {
+  const urvuuArr = [];
+  for (let i = arra.length - 1; i >= 0; i--) {
+    urvuuArr.push(arra[i]);
+  }
+  return urvuuArr;
+}
+
+const arra = [4, 5, 6, 7, 8];
+const urvuuArrayResult = urvuuArray(arra);
+console.log(arra);
+console.log(urvuuArrayResult);
+
+console.log("===============================================");
+console.log(
+  "Бодлого: Өгөгдсөн массив дотроос Z тоо байгаа эсэхийг шалгаад индексийг нь хэвлэх функц бич?"
+);
+
+function tooOloh(aRr, z) {
+  for (let i = 0; i < aRr.length; i++) {
+    if (aRr[i] === z) {
+      console.log(`Тоо ${z} нь ${i} индекс дээр байна.`);
+      return;
+    }
+  }
+  console.log(`Тоо ${z} массивт олдсонгүй.`);
+}
+
+const aRr = [10, 20, 30, 40, 50];
+const z = 40;
+
+tooOloh(aRr, z);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн массивыг хамгийн багаас хамгийн их рүү эрэмбэл."
+);
+
+function erembel(arR) {
+  return arR.sort((a, b) => a - b);
+}
+
+const arR = [30, 90, 10, 40, 20];
+const erembelsen = erembel(arR);
+console.log(erembelsen);
+console.log("===============================================");
+
+console.log("Бодлого: 1-100 хүртэлх тэгш тоог хэвлэх функц бич?");
+
+function printEvenNumbers(limit) {
+  console.log("Тэгш тоонууд:");
+  for (let i = 2; i <= limit; i += 2) {
+    console.log(i);
+  }
+}
+
+printEvenNumbers(100);
+console.log("===============================================");
+
+console.log("Бодлого: 1-100 хүртэлх сондгой тоонуудыг хэвлэх функц бич?");
+
+function printOddNumbers(limit) {
+  console.log("Сондгой тоонууд:");
+  for (let i = 1; i <= limit; i += 2) {
+    console.log(i);
+  }
+}
+
+printOddNumbers(100);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн N хүртэлх тооны тэгш тоонуудын үржвэрийг олох функц бич?(N = 200)"
+);
+
+function calculateEvenProduct(N) {
+  let product = 1;
+  for (let i = 2; i <= N; i += 2) {
+    product *= i;
+  }
+  return product;
+}
+
+let N = 200;
+let result0 = calculateEvenProduct(N);
+
+console.log(`1-ээс ${N} хүртэлх тэгш тоонуудын үржвэр: ${result0}`);
+console.log("===============================================");
+
+console.log(
+  "Өгөгдсөн M хүртэлх тооны сондгой тоонуудын нийлбэрийг олох функц бич?(M = 200)"
+);
+
+function calculateOdd(M) {
+  let product = 0;
+  for (let i = 1; i <= M; i += 2) {
+    product += i;
+  }
+  return product;
+}
+
+let M = 200;
+let result1 = calculateOdd(M);
+
+console.log(`1-ээс ${M} хүртэлх сондгой тоонуудын нийлбэр: ${result1}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн B тоо хүртэл хэдэн сондгой цифр байгааг тоолох функц бич? B = 148 "
+);
+
+function countOddDigits(B) {
+  let count = 0;
+  for (let i = 1; i <= B; i++) {
+    let numStr = i.toString();
+
+    for (j = 0; j < numStr.length; j++) {
+      let digit = parseInt(numStr[j]);
+
+      if (digit % 2 !== 0) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+let B = 148;
+let result2 = countOddDigits(B);
+console.log(`1-ээс ${B} хүртэлх сондгой цифрүүдийн тоо: ${result2}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн v хүртэлх тэгш цифр хэд байгааг тоолох функц бич? v = 60"
+);
+
+function countEvenDigits(v) {
+  let count = 0;
+  for (let i = 1; i <= v; i++) {
+    let numstr = i.toString();
+
+    for (j = 0; j < numstr.length; j++) {
+      let digit = parseInt(numstr[j]);
+
+      if (digit % 2 === 0) {
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+let v = 60;
+let result3 = countEvenDigits(v);
+console.log(`1-ээс ${v} хүртэлх тэгш цифрүүдийн тоо: ${result3}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн машины номер хэд дэх өдөр явах эрхгүй вэ гэсэн функц бич?"
+);
+
+function yawahErhguiUdur(carNumber) {
+  let suuliinToo = carNumber % 10;
+
+  if (suuliinToo === 1 || suuliinToo === 6) {
+    return "Даваа гариг";
+  } else if (suuliinToo === 2 || suuliinToo === 7) {
+    return "мягмар гариг";
+  } else if (suuliinToo === 3 || suuliinToo === 8) {
+    return " Лхагва гариг";
+  } else if (suuliinToo === 4 || suuliinToo === 9) {
+    return "Пүрэв гариг";
+  } else if (suuliinToo === 5 || suuliinToo === 0) {
+    return "Баасан гариг";
+  } else {
+    return "Буруу дугаар";
+  }
+}
+
+let carNumber = 3;
+let yawahguiUdur = yawahErhguiUdur(carNumber);
+console.log(`Машины дугаар ${carNumber}, Явах эрхгүй өдөр: ${yawahguiUdur}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: 50 хүртэлх тооны 3-т хуваагдаж байвал fizz, 5-т хуваагдаж байвал buzz, 3 болон 5-т 2-ууланд нь хуваагдаж байвал fizzbuzz, алинд нь ч таарахгүй байвал тоог дангаар нь хэвлэх функц бич?"
+);
+
+function fizzBuzz(limit) {
+  for (let i = 1; i <= limit; i++) {
+    if ((i % 3 === 0) & (i % 5 === 0)) {
+      console.log("fizzbuzz");
+    } else if (i % 3 === 0) {
+      console.log("fizz");
+    } else if (i % 5 === 0) {
+      console.log("buzz");
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+fizzBuzz(50);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Хүмүүсийн төрсөн онууд өгөгдсөн бол насуудыг бодож гаргах функц бич? birthYear = [1994, 1997, 2003, 1993, 2001]"
+);
+
+function calculateNas(birthYears) {
+  const currentYear = new Date().getFullYear();
+  const ages = [];
+
+  for (let i = 0; i < birthYears.length; i++) {
+    const age = currentYear - birthYears[i];
+    ages.push(age);
+  }
+  return ages;
+}
+
+const birthYears = [1994, 1997, 2003, 1993, 2001];
+const ages = calculateNas(birthYears);
+console.log(`Төрсөн онууд: ${birthYears}, Насууд: ${ages}`);
+console.log("===============================================");
+
+console.log("array-н бүх утгыг 2 дахин ихэсгэх функц бич? a = [1, 2, 3, 4]");
+
+function multipleArray(a) {
+  const urjihArr = [];
+  for (let i = 0; i < a.length; i++) {
+    urjihArr.push(a[i] * 2);
+  }
+  return urjihArr;
+}
+
+const a = [1, 2, 3, 4];
+const urjihA = multipleArray(a);
+console.log(`Эхний массив: ${a}, үржүүлсэн массив: ${urjihA}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Array-н тэгш элементүүдийг олох функц бич? [11, 22, 33, 44]"
+);
+
+function findEvenElements(arrA) {
+  const evenElements = [];
+
+  for (let i = 0; i < arrA.length; i++) {
+    if (arrA[i] % 2 === 0) {
+      evenElements.push(arrA[i]);
+    }
+  }
+  return evenElements;
+}
+
+const arrA = [11, 22, 33, 44];
+const evenArr = findEvenElements(arrA);
+console.log(`Эхний массив: ${arrA}, Тэгш элементүүдтэй массив: ${evenArr}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн массивын нийлбэрийг олох функц бич? [11, 23, 56, 69, 87, 95]"
+);
+
+function sumArray(arr0) {
+  let sum = 0;
+  for (let i = 0; i < arr0.length; i++) {
+    sum += arr0[i];
+  }
+  return sum;
+}
+
+const arr0 = [11, 23, 56, 69, 87, 95];
+const totalSum = sumArray(arr0);
+console.log(`Массивын нийлбэр: ${totalSum}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн массивын дундажыг олоод буцаах функц бич? [11, 23, 56, 69, 87, 95]"
+);
+
+function calculateAverage(arr1) {
+  if (arr1.length === 0) {
+    return 0;
+  }
+
+  let sum = 0;
+
+  for (let i = 0; i < arr1.length; i++) {
+    sum += arr1[i];
+  }
+  return sum / arr1.length;
+}
+
+const arr1 = [11, 23, 56, 69, 87, 95];
+const average = calculateAverage(arr1);
+console.log(`Массивын дундаж: ${average}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн массивын хамгийн их тоог олж буцаах функц бич?[11, 23, 56, 95, 87, 69]"
+);
+
+function findMaxNumber(arr3) {
+  if (arr3.length === 0) {
+    return undefined;
+  }
+  let max = arr3[0];
+
+  for (let i = 1; i < arr3.length; i++) {
+    if (arr3[i] > max) {
+      max = arr3[i];
+    }
+  }
+  return max;
+}
+
+const arr3 = [11, 23, 56, 95, 87, 69];
+const maxNumber = findMaxNumber(arr3);
+console.log(`Массивын хамгийн их тоо: ${maxNumber}`);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн тооны тэгш сондгойг олох функц бич? 3, 2 , 11 , 7"
+);
+
+function evenOrOdd(number) {
+  if (number % 2 === 0) {
+    return `${number}- тэгш тоо`;
+  } else {
+    return `${number}- сондгой тоо`;
+  }
+}
+
+console.log(evenOrOdd(3));
+console.log(evenOrOdd(2));
+console.log(evenOrOdd(11));
+console.log(evenOrOdd(7));
+console.log("===============================================");
+
+console.log("Бодлого: Өгөгдсөн 3 тооны багийг олох функц бич?");
+
+function findSmallest(num1, num2, num3) {
+  let smallest = num1;
+
+  if (num2 < smallest) {
+    smallest = num2;
+  }
+
+  if (num3 < smallest) {
+    smallest = num3;
+  }
+  return smallest;
+}
+
+console.log(findSmallest(5, 10, 3));
+console.log(findSmallest(15, 7, 20));
+console.log(findSmallest(8, 8, 2));
+console.log(findSmallest(-1, 0, 1));
+console.log("===============================================");
+
+console.log("Бодлого: Өгөгдсөн 3 тооны ихийг олох функц бич? 7, 1, 12");
+
+function findLargest(num1, num2, num3) {
+  let largest = num1;
+
+  if (num2 > largest) {
+    largest = num2;
+  }
+
+  if (num3 > largest) {
+    largest = num3;
+  }
+  return largest;
+}
+
+console.log(findLargest(7, 1, 12));
+console.log(findLargest(15, 7, 20));
+console.log(findLargest(8, 8, 2));
+console.log(findLargest(-1, 0, 1));
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн 4 тооны 5-аас их тоонуудын үржвэрийг олох функц бич?"
+);
+
+function multiply(num1, num2, num3, num4) {
+  let product = 1;
+  let count = 0;
+
+  if (num1 > 5) {
+    product *= num1;
+    count++;
+  }
+  if (num2 > 5) {
+    product *= num2;
+    count++;
+  }
+  if (num3 > 5) {
+    product *= num3;
+    count++;
+  }
+  if (num4 > 5) {
+    product *= num4;
+    count++;
+  }
+
+  if (count === 0) {
+    return "5-аас их тоо байхгүй.";
+  } else {
+    return product;
+  }
+}
+
+console.log(multiply(11, 9, 4, 3));
+console.log(multiply(7, 6, 8, 10));
+console.log(multiply(1, 2, 3, 4));
+console.log("===============================================");
+
+console.log("Бодлого: Өгөгдсөн сар аль улирал болохыг мэдэх функц бич?");
+
+function getSeason(month) {
+  if (month >= 3 && month <= 5) {
+    return "Хавар";
+  } else if (month >= 6 && month <= 8) {
+    return "Зун";
+  } else if (month >= 9 && month <= 11) {
+    return "Намар";
+  } else if (month === 12 || month === 1 || month === 2) {
+    return "Өвөл";
+  } else {
+    return "Буруу сар оруулсан.";
+  }
+}
+
+console.log(getSeason(3));
+console.log(getSeason(7));
+console.log(getSeason(10));
+console.log(getSeason(1));
+console.log(getSeason(13));
+console.log("===============================================");
+
+console.log("Шалгалтын онооноос хамааран дүнгийн жагсаалт гаргах функц бич?");
+
+function getGrade(score) {
+  if (score < 60) {
+    return "Маш муу";
+  } else if (score >= 60 && score < 70) {
+    return "Хангалттай";
+  } else if (score >= 70 && score < 80) {
+    return "Дунд";
+  } else if (score >= 80 && score < 90) {
+    return "Сайн";
+  } else if (score >= 90 && score <= 100) {
+    return "Маш сайн";
+  } else {
+    return "Буруу оноо оруулсан.";
+  }
+}
+
+console.log(getGrade(55));
+console.log(getGrade(65));
+console.log(getGrade(75));
+console.log(getGrade(85));
+console.log(getGrade(95));
+console.log(getGrade(105));
+console.log("===============================================");
+
+console.log("Бодлого: Өгөгдсөн гурвалжны периметрийг олох функц бич?");
+
+function calculatetrianglePerimeter(side1, side2, side3) {
+  const perimeter = side1 + side2 + side3;
+  return perimeter;
+}
+
+const sideA = 4;
+const sideB = 5;
+const sideC = 6;
+
+const trianglePerimeter = calculatetrianglePerimeter(sideA, sideB, sideC);
+console.log("Гурвалжны периметр:", trianglePerimeter);
+console.log("===============================================");
+
+console.log("Бодлого: Бүхэл тооны нийлбэрийг олох функц бич? 1, 3, 5, 7, 8.7");
+
+function sumOfNumbers(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum;
+}
+
+const numbers = [1, 3, 5, 7, 8.7];
+const totalSum0 = sumOfNumbers(numbers);
+console.log("Тоонуудын нийлбэр:", totalSum0);
+console.log("===============================================");
+console.log(
+  "Бодлого: Өгөгдсөн тэгш өнцөгтийн талбай ба периметрийг олох функц бич?"
+);
+
+function calculaterectangle(width, height) {
+  const area = width * height;
+  const perimeter = 2 * (width + height);
+
+  return { area: area, perimeter: perimeter };
+}
+
+const rectangleWidth = 5;
+const rectangleHeight = 10;
+
+const rectangleValues = calculaterectangle(rectangleWidth, rectangleHeight);
+
+console.log("Тэгш өнцөгтийн талбай:", rectangleValues.area);
+console.log("Тэгш өнцөгтийн периметр:", rectangleValues.perimeter);
+console.log("===============================================");
+
+console.log("Бодлого: Өгөгдсөн 98 секундыг минут секунд болгох функц бич?");
+
+function convertSecondsToMinutes(totalSeconds) {
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+
+  return { minutes: minutes, seconds: seconds };
+}
+
+const totalSeconds = 98;
+const time = convertSecondsToMinutes(totalSeconds);
+
+console.log(
+  `${totalSeconds} секунд нь ${time.minutes} минут ${time.seconds} секунд`
+);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн 1297 секундыг цаг минут секунд болгох функц бич?"
+);
+
+function convertSecondsToHour(totalSeconds0) {
+  const hours = Math.floor(totalSeconds0 / 3600);
+  const remainingSeconds = totalSeconds0 % 3600;
+  const minutes = Math.floor(remainingSeconds / 60);
+  const seconds = remainingSeconds % 60;
+
+  return {
+    hours: hours,
+    minutes: minutes,
+    seconds: seconds,
+  };
+}
+
+const totalSeconds0 = 1297;
+const time0 = convertSecondsToHour(totalSeconds0);
+
+console.log(
+  `${totalSeconds0} секунд нь ${time0.hours} цаг ${time0.minutes} минут ${time0.seconds} секунд`
+);
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн 875 минут 88 секундыг секунд рүү шилжүүлэх функц бич?"
+);
+
+function convertMinutesToSeconds(minutes, Seconds) {
+  const MinutesInSeconds = minutes * 60;
+
+  const totalSeconds = MinutesInSeconds + seconds;
+
+  return totalSeconds;
+}
+
+const minutes = 875;
+const seconds = 88;
+
+const totalSeconds1 = convertMinutesToSeconds(minutes, seconds);
+console.log(`${minutes} минут ${seconds} секунд нь ${totalSeconds1} секунд.`);
+
+console.log("===============================================");
+
+console.log(
+  "Бодлого: Өгөгдсөн 83цаг 84 минут 85 секундыг секундруу шилжүүлэх функц бич?"
+);
+
+function convertHMS(hours, minutes, seconds) {
+  const hoursInSeconds = hours * 3600;
+  const minutesInSeconds = minutes * 60;
+  const totalSeconds = hoursInSeconds + minutesInSeconds + seconds;
+
+  return totalSeconds;
+}
+
+const hours00 = 83;
+const minutes00 = 84;
+const seconds00 = 85;
+
+const totalSeconds00 = convertHMS(hours00, minutes00, seconds00);
+
+console.log(
+  `${hours00} цаг ${minutes00} минут ${seconds00} секунд нь нийт: ${totalSeconds00}`
+);
