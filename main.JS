@@ -961,410 +961,410 @@
 
 //2/28-ний бодлого
 
-const employees = [
-  { id: 1, name: "Бат", age: 25, position: "Developer", salary: 2500000 },
-  { id: 2, name: "Сараа", age: 30, position: "Manager", salary: 3500000 },
-  { id: 3, name: "Дорж", age: 22, position: "Intern", salary: 1000000 },
-  { id: 4, name: "Тэмүүлэн", age: 40, position: "CEO", salary: 6000000 },
-  { id: 5, name: "Одмаа", age: 28, position: "Designer", salary: 2700000 },
-  { id: 6, name: "Ганбаа", age: 35, position: "HR", salary: 2200000 },
-  { id: 7, name: "Мөнхөө", age: 29, position: "QA engineer", salary: 2400000 },
-  {
-    id: 8,
-    name: "Номин",
-    age: 33,
-    position: "Project manager",
-    salary: 3700000,
-  },
-  { id: 9, name: "Хишигээ", age: 24, position: "Marketing", salary: 2300000 },
-  {
-    id: 10,
-    name: "Төгөлдөр",
-    age: 27,
-    position: "Backend developer",
-    salary: 2800000,
-  },
-];
+// const employees = [
+//   { id: 1, name: "Бат", age: 25, position: "Developer", salary: 2500000 },
+//   { id: 2, name: "Сараа", age: 30, position: "Manager", salary: 3500000 },
+//   { id: 3, name: "Дорж", age: 22, position: "Intern", salary: 1000000 },
+//   { id: 4, name: "Тэмүүлэн", age: 40, position: "CEO", salary: 6000000 },
+//   { id: 5, name: "Одмаа", age: 28, position: "Designer", salary: 2700000 },
+//   { id: 6, name: "Ганбаа", age: 35, position: "HR", salary: 2200000 },
+//   { id: 7, name: "Мөнхөө", age: 29, position: "QA engineer", salary: 2400000 },
+//   {
+//     id: 8,
+//     name: "Номин",
+//     age: 33,
+//     position: "Project manager",
+//     salary: 3700000,
+//   },
+//   { id: 9, name: "Хишигээ", age: 24, position: "Marketing", salary: 2300000 },
+//   {
+//     id: 10,
+//     name: "Төгөлдөр",
+//     age: 27,
+//     position: "Backend developer",
+//     salary: 2800000,
+//   },
+// ];
 
-console.log(
-  "Бодлого-1: Өгөгдсөн ажилчдын мэдээллийг дарааллаар нь хэвлэх функц"
-);
+// console.log(
+//   "Бодлого-1: Өгөгдсөн ажилчдын мэдээллийг дарааллаар нь хэвлэх функц"
+// );
 
-// function printEmloyee(employee) {
-//   console.log(
-//     `id: ${employee.id}, Name: ${employee.name}, age : ${employee.age}, position: ${employee.age}, salary : ${employee.salary}`
-//   );
+// // function printEmloyee(employee) {
+// //   console.log(
+// //     `id: ${employee.id}, Name: ${employee.name}, age : ${employee.age}, position: ${employee.age}, salary : ${employee.salary}`
+// //   );
+// // }
+
+// function printEmployees(employeess) {
+//   for (let i = 0; i < employeess.length; i++) {
+//     const employee = employeess[i];
+//     console.log(
+//       `ID: ${employee.id}, Name: ${employee.name}, Age: ${employee.age}, Position: ${employee.position}, Salary: ${employee.salary}`
+//     );
+//   }
 // }
 
-function printEmployees(employeess) {
-  for (let i = 0; i < employeess.length; i++) {
-    const employee = employeess[i];
-    console.log(
-      `ID: ${employee.id}, Name: ${employee.name}, Age: ${employee.age}, Position: ${employee.position}, Salary: ${employee.salary}`
-    );
-  }
-}
+// printEmployees(employees);
 
-printEmployees(employees);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log("Бодлого-2: 30-аас дээш настай ажилчдыг олох функц бич.");
 
-console.log("Бодлого-2: 30-аас дээш настай ажилчдыг олох функц бич.");
+// // function findEmployeesByAge(age) {
+// //   const findEmployees = [];
+// //   let findIndex = 0;
+// //   for (let i = 0; i < employees.length; i++) {
+// //     if (employees[i].age >= age) {
+// //       findEmployees[findIndex] = employees[i];
+// //       findIndex++;
+// //     }
+// //   }
+// //   return findEmployees;
+// // }
 
-// function findEmployeesByAge(age) {
-//   const findEmployees = [];
-//   let findIndex = 0;
-//   for (let i = 0; i < employees.length; i++) {
-//     if (employees[i].age >= age) {
-//       findEmployees[findIndex] = employees[i];
-//       findIndex++;
+// function findEmployeesOver30(employees1) {
+//   const over30Employees = [];
+//   let index = 0; // Шинэ массивт элементийг оруулах индекс
+//   for (let i = 0; i < employees1.length; i++) {
+//     if (employees1[i].age >= 30) {
+//       over30Employees[index] = employees1[i]; // push-ийн оронд индексээр оруулах
+//       index++; // Индексийг нэмэгдүүлэх
 //     }
 //   }
-//   return findEmployees;
+//   return over30Employees;
 // }
 
-function findEmployeesOver30(employees1) {
-  const over30Employees = [];
-  let index = 0; // Шинэ массивт элементийг оруулах индекс
-  for (let i = 0; i < employees1.length; i++) {
-    if (employees1[i].age >= 30) {
-      over30Employees[index] = employees1[i]; // push-ийн оронд индексээр оруулах
-      index++; // Индексийг нэмэгдүүлэх
-    }
-  }
-  return over30Employees;
-}
+// const employeesOver30 = findEmployeesOver30(employees);
+// console.log(employeesOver30);
 
-const employeesOver30 = findEmployeesOver30(employees);
-console.log(employeesOver30);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log("Бодлого-3: Ажилчдын дундаж насыг олох функц бич?");
 
-console.log("Бодлого-3: Ажилчдын дундаж насыг олох функц бич?");
+// // // function averageAge() {
+// // //   let sum = 0;
+// // //   for (let i = 0; i < employees.length; i++) {
+// // //     sum += employees[i].age;
+// // //   }
+// // //   return sum / employees.length;
+// // }
 
-// // function averageAge() {
+// function calculateAverageAge(employees2) {
+//   if (employees2.length === 0) {
+//     return 0;
+//   }
+
+//   let totalAge = 0;
+//   for (let i = 0; i < employees2.length; i++) {
+//     totalAge += employees2[i].age;
+//   }
+
+//   return totalAge / employees2.length;
+// }
+
+// const averageAge = calculateAverageAge(employees);
+// console.log("Ажилчдын дундаж нас:", averageAge);
+
+// console.log("===============================================");
+
+// console.log("Бодлого-4: Developer албан тушаалтай ажилчдыг олох функц бич:");
+
+// // function countByPosition(position) {
+// //   let count = 0;
+// //   for (let i = 0; i < employees.length; i++) {
+// //     if (employees[i].position === position) {
+// //       count++;
+// //     }
+// //   }
+// //   return count;
+// // }
+
+// function findDevelopers(employees3) {
+//   const developers = [];
+//   let index = 0; // Шинэ массивт элементийг оруулах индекс
+//   for (let i = 0; i < employees3.length; i++) {
+//     if (
+//       employees3[i].position === "Developer" ||
+//       employees3[i].position === "Backend developer"
+//     ) {
+//       developers[index] = employees3[i]; // push-ийн оронд индексээр оруулах
+//       index++; // Индексийг нэмэгдүүлэх
+//     }
+//   }
+//   return developers;
+// }
+
+// const developerEmployees = findDevelopers(employees);
+// console.log(developerEmployees);
+
+// console.log("===============================================");
+
+// console.log("Бодлого-5: Нийт ажилчдын тоог хэвлэх функц бич:");
+
+// // function countEmployees() {
+// //   return employees.length;
+// // }
+
+// function printEmployeeCount(employees4) {
+//   const employeeCount = employees4.length;
+//   console.log("Нийт ажилчдын тоо:", employeeCount);
+// }
+
+// printEmployeeCount(employees);
+
+// console.log("===============================================");
+
+// console.log("Бодлого-6: Бүх ажилчдын цалинг 10%-иар нэмэгдүүлэх функц бич.");
+
+// // function increaseSalary() {
+// //   for (let i = 0; i < employees.length; i++) {
+// //     employees[i].salary += employees[i].salary * 0.1;
+// //   }
+// // }
+
+// function increaseAllSalaries(employees5) {
+//   for (let i = 0; i < employees5.length; i++) {
+//     employees5[i].salary += employees5[i].salary * 0.1;
+//   }
+// }
+
+// increaseAllSalaries(employees);
+
+// console.log(employees);
+
+// console.log("===============================================");
+
+// console.log(
+//   "Бодлого-7: Бүх ажилчдын нийт цалингийн нийлбэрийг олох функц бич."
+// );
+
+// // function sumSalary() {
 // //   let sum = 0;
 // //   for (let i = 0; i < employees.length; i++) {
-// //     sum += employees[i].age;
+// //     sum += employees[i].salary;
 // //   }
-// //   return sum / employees.length;
-// }
+// //   return sum;
+// // }
 
-function calculateAverageAge(employees2) {
-  if (employees2.length === 0) {
-    return 0;
-  }
-
-  let totalAge = 0;
-  for (let i = 0; i < employees2.length; i++) {
-    totalAge += employees2[i].age;
-  }
-
-  return totalAge / employees2.length;
-}
-
-const averageAge = calculateAverageAge(employees);
-console.log("Ажилчдын дундаж нас:", averageAge);
-
-console.log("===============================================");
-
-console.log("Бодлого-4: Developer албан тушаалтай ажилчдыг олох функц бич:");
-
-// function countByPosition(position) {
-//   let count = 0;
-//   for (let i = 0; i < employees.length; i++) {
-//     if (employees[i].position === position) {
-//       count++;
-//     }
+// function calculateTotalSalary(employees6) {
+//   let totalSalary = 0;
+//   for (let i = 0; i < employees6.length; i++) {
+//     totalSalary += employees6[i].salary;
 //   }
-//   return count;
+//   return totalSalary;
 // }
 
-function findDevelopers(employees3) {
-  const developers = [];
-  let index = 0; // Шинэ массивт элементийг оруулах индекс
-  for (let i = 0; i < employees3.length; i++) {
-    if (
-      employees3[i].position === "Developer" ||
-      employees3[i].position === "Backend developer"
-    ) {
-      developers[index] = employees3[i]; // push-ийн оронд индексээр оруулах
-      index++; // Индексийг нэмэгдүүлэх
-    }
-  }
-  return developers;
-}
+// const totalSalary = calculateTotalSalary(employees);
+// console.log("Нийт ажилчдын цалингийн нийлбэр:", totalSalary);
 
-const developerEmployees = findDevelopers(employees);
-console.log(developerEmployees);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log("Бодлого-8: Тухайн ажилтан байгаа эсэхийг шалгах функц бич.");
 
-console.log("Бодлого-5: Нийт ажилчдын тоог хэвлэх функц бич:");
+// // function isEmployeeExist(name) {
+// //   for (let i = 0; i < employees.length; i++) {
+// //     if (employees[i].name === name) {
+// //       return true;
+// //     }
+// //   }
+// //   return false;
+// // }
 
-// function countEmployees() {
-//   return employees.length;
-// }
-
-function printEmployeeCount(employees4) {
-  const employeeCount = employees4.length;
-  console.log("Нийт ажилчдын тоо:", employeeCount);
-}
-
-printEmployeeCount(employees);
-
-console.log("===============================================");
-
-console.log("Бодлого-6: Бүх ажилчдын цалинг 10%-иар нэмэгдүүлэх функц бич.");
-
-// function increaseSalary() {
-//   for (let i = 0; i < employees.length; i++) {
-//     employees[i].salary += employees[i].salary * 0.1;
-//   }
-// }
-
-function increaseAllSalaries(employees5) {
-  for (let i = 0; i < employees5.length; i++) {
-    employees5[i].salary += employees5[i].salary * 0.1;
-  }
-}
-
-increaseAllSalaries(employees);
-
-console.log(employees);
-
-console.log("===============================================");
-
-console.log(
-  "Бодлого-7: Бүх ажилчдын нийт цалингийн нийлбэрийг олох функц бич."
-);
-
-// function sumSalary() {
-//   let sum = 0;
-//   for (let i = 0; i < employees.length; i++) {
-//     sum += employees[i].salary;
-//   }
-//   return sum;
-// }
-
-function calculateTotalSalary(employees6) {
-  let totalSalary = 0;
-  for (let i = 0; i < employees6.length; i++) {
-    totalSalary += employees6[i].salary;
-  }
-  return totalSalary;
-}
-
-const totalSalary = calculateTotalSalary(employees);
-console.log("Нийт ажилчдын цалингийн нийлбэр:", totalSalary);
-
-console.log("===============================================");
-
-console.log("Бодлого-8: Тухайн ажилтан байгаа эсэхийг шалгах функц бич.");
-
-// function isEmployeeExist(name) {
-//   for (let i = 0; i < employees.length; i++) {
-//     if (employees[i].name === name) {
+// function isEmployeeExists(employees7, employeeName) {
+//   for (let i = 0; i < employees7.length; i++) {
+//     if (employees7[i].name === employeeName) {
 //       return true;
 //     }
 //   }
 //   return false;
 // }
 
-function isEmployeeExists(employees7, employeeName) {
-  for (let i = 0; i < employees7.length; i++) {
-    if (employees7[i].name === employeeName) {
-      return true;
-    }
-  }
-  return false;
-}
+// const employeeToCheck = "Номин";
+// const employeeExists = isEmployeeExists(employees, employeeToCheck);
 
-const employeeToCheck = "Номин";
-const employeeExists = isEmployeeExists(employees, employeeToCheck);
+// if (employeeExists) {
+//   console.log(`${employeeToCheck} нэртэй ажилтан байна.`);
+// } else {
+//   console.log(`${employeeToCheck} нэртэй ажилтан байхгүй байна.`);
+// }
 
-if (employeeExists) {
-  console.log(`${employeeToCheck} нэртэй ажилтан байна.`);
-} else {
-  console.log(`${employeeToCheck} нэртэй ажилтан байхгүй байна.`);
-}
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log("Бодлого-9: Ажилчдын бүх албан тушаалыг массив болгон гарга?");
 
-console.log("Бодлого-9: Ажилчдын бүх албан тушаалыг массив болгон гарга?");
+// const positions = new Array(employees.length);
+// for (let i = 0; i < employees.length; i++) {
+//   positions[i] = employees[i].position;
+// }
+// console.log(positions);
 
-const positions = new Array(employees.length);
-for (let i = 0; i < employees.length; i++) {
-  positions[i] = employees[i].position;
-}
-console.log(positions);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log("Бодлого-10: Ажилчдын дундаж цалинг олох функц бич?");
 
-console.log("Бодлого-10: Ажилчдын дундаж цалинг олох функц бич?");
+// function calculateAverageSalary(employees8) {
+//   if (employees8 === 0) {
+//     return 0;
+//   }
+//   let totalSalary = 0;
+//   for (let i = 0; i < employees8.length; i++) {
+//     totalSalary += employees8[i].salary;
+//   }
+//   return totalSalary / employees8.length;
+// }
 
-function calculateAverageSalary(employees8) {
-  if (employees8 === 0) {
-    return 0;
-  }
-  let totalSalary = 0;
-  for (let i = 0; i < employees8.length; i++) {
-    totalSalary += employees8[i].salary;
-  }
-  return totalSalary / employees8.length;
-}
+// const averageSalary = calculateAverageSalary(employees);
+// console.log("Ажилчдын дундаж цалин:", averageSalary);
 
-const averageSalary = calculateAverageSalary(employees);
-console.log("Ажилчдын дундаж цалин:", averageSalary);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log(
+//   "Бодлого-11: Тухайн албан тушаалтай ажилтан хэдэн ажилтан байгааг тоолох функц бич?"
+// );
 
-console.log(
-  "Бодлого-11: Тухайн албан тушаалтай ажилтан хэдэн ажилтан байгааг тоолох функц бич?"
-);
+// function countEmployeesByPosition(employees, positionToCount) {
+//   let count = 0;
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].position === positionToCount) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
-function countEmployeesByPosition(employees, positionToCount) {
-  let count = 0;
-  for (let i = 0; i < employees.length; i++) {
-    if (employees[i].position === positionToCount) {
-      count++;
-    }
-  }
-  return count;
-}
+// const positionToCount = "Developer";
+// const employeeCount = countEmployeesByPosition(employees, positionToCount);
+// console.log(`${positionToCount} албан тушаалтай ажилтны тоо: ${employeeCount}`);
 
-const positionToCount = "Developer";
-const employeeCount = countEmployeesByPosition(employees, positionToCount);
-console.log(`${positionToCount} албан тушаалтай ажилтны тоо: ${employeeCount}`);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log(
+//   "Бодлого-12: Ажилчдын мэдээллийг зөвхөн нэр, албан тушаал, нас гэсэн шинэ массив болгон буцаа."
+// );
 
-console.log(
-  "Бодлого-12: Ажилчдын мэдээллийг зөвхөн нэр, албан тушаал, нас гэсэн шинэ массив болгон буцаа."
-);
+// function simplifyEmployeeData(employees) {
+//   const simplifiedEmployees = new Array(employees.length);
+//   for (let i = 0; i < employees.length; i++) {
+//     simplifiedEmployees[i] = {
+//       name: employees[i].name,
+//       position: employees[i].position,
+//       age: employees[i].age,
+//     };
+//   }
+//   return simplifiedEmployees;
+// }
 
-function simplifyEmployeeData(employees) {
-  const simplifiedEmployees = new Array(employees.length);
-  for (let i = 0; i < employees.length; i++) {
-    simplifiedEmployees[i] = {
-      name: employees[i].name,
-      position: employees[i].position,
-      age: employees[i].age,
-    };
-  }
-  return simplifiedEmployees;
-}
+// const simplifiedData = simplifyEmployeeData(employees);
+// console.log(simplifiedData);
 
-const simplifiedData = simplifyEmployeeData(employees);
-console.log(simplifiedData);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log(
+//   "Бодлого-13: Тухайн ажилтан Exists эсэхийг ID-аар нь шалгах функц бич?"
+// );
 
-console.log(
-  "Бодлого-13: Тухайн ажилтан Exists эсэхийг ID-аар нь шалгах функц бич?"
-);
+// function employeeExistss(employees, employeeId) {
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].id === employeeId) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
 
-function employeeExistss(employees, employeeId) {
-  for (let i = 0; i < employees.length; i++) {
-    if (employees[i].id === employeeId) {
-      return true;
-    }
-  }
-  return false;
-}
+// const employeeIdToCheck = 5;
+// const exists = employeeExistss(employees, employeeIdToCheck);
+// console.log(`ID ${employeeIdToCheck} бүхий ажилтан: ${exists}`);
 
-const employeeIdToCheck = 5;
-const exists = employeeExistss(employees, employeeIdToCheck);
-console.log(`ID ${employeeIdToCheck} бүхий ажилтан: ${exists}`);
+// const nonExistentId = 11;
+// const notExists = employeeExistss(employees, nonExistentId);
+// console.log(`ID ${nonExistentId} бүхий ажилтан: ${notExists}`);
 
-const nonExistentId = 11;
-const notExists = employeeExistss(employees, nonExistentId);
-console.log(`ID ${nonExistentId} бүхий ажилтан: ${notExists}`);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log(
+//   "Бодлого-14: Нас нь 25-аас дээш, цалин нь 3 сая-аас бага ажилчдыг шүүж гаргах функц бич."
+// );
 
-console.log(
-  "Бодлого-14: Нас нь 25-аас дээш, цалин нь 3 сая-аас бага ажилчдыг шүүж гаргах функц бич."
-);
+// function filterEmployees(employees) {
+//   let count = 0;
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].age > 25 && employees[i].salary < 3000000) {
+//       count++;
+//     }
+//   }
 
-function filterEmployees(employees) {
-  let count = 0;
-  for (let i = 0; i < employees.length; i++) {
-    if (employees[i].age > 25 && employees[i].salary < 3000000) {
-      count++;
-    }
-  }
+//   const filteredEmployees = new Array(count);
+//   let index = 0;
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].age > 25 && employees[i].salary < 3000000) {
+//       filteredEmployees[index] = employees[i];
+//       index++;
+//     }
+//   }
+//   return filteredEmployees;
+// }
 
-  const filteredEmployees = new Array(count);
-  let index = 0;
-  for (let i = 0; i < employees.length; i++) {
-    if (employees[i].age > 25 && employees[i].salary < 3000000) {
-      filteredEmployees[index] = employees[i];
-      index++;
-    }
-  }
-  return filteredEmployees;
-}
+// const filteredData = filterEmployees(employees);
+// console.log(filteredData);
 
-const filteredData = filterEmployees(employees);
-console.log(filteredData);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log(
+//   "Бодлого-15: Өгөгдсөн насны хүрээнд (жишээ нь, 25-35 нас) багтах ажилчдыг шүүж гаргах функц бич."
+// );
 
-console.log(
-  "Бодлого-15: Өгөгдсөн насны хүрээнд (жишээ нь, 25-35 нас) багтах ажилчдыг шүүж гаргах функц бич."
-);
+// function filterEmployeesByAgeRange(employees, minAge, maxAge) {
+//   let count = 0;
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].age >= minAge && employees[i].age <= maxAge) {
+//       count++;
+//     }
+//   }
 
-function filterEmployeesByAgeRange(employees, minAge, maxAge) {
-  let count = 0;
-  for (let i = 0; i < employees.length; i++) {
-    if (employees[i].age >= minAge && employees[i].age <= maxAge) {
-      count++;
-    }
-  }
+//   const filteredEmployees = new Array(count);
+//   let index = 0;
+//   for (let i = 0; i < employees.length; i++) {
+//     if (employees[i].age >= minAge && employees[i].age <= maxAge) {
+//       filteredEmployees[index] = employees[i];
+//       index++;
+//     }
+//   }
+//   return filteredEmployees;
+// }
 
-  const filteredEmployees = new Array(count);
-  let index = 0;
-  for (let i = 0; i < employees.length; i++) {
-    if (employees[i].age >= minAge && employees[i].age <= maxAge) {
-      filteredEmployees[index] = employees[i];
-      index++;
-    }
-  }
-  return filteredEmployees;
-}
+// const minAge = 30;
+// const maxAge = 40;
+// const filtereddData = filterEmployeesByAgeRange(employees, minAge, maxAge);
+// console.log(filtereddData);
 
-const minAge = 30;
-const maxAge = 40;
-const filtereddData = filterEmployeesByAgeRange(employees, minAge, maxAge);
-console.log(filtereddData);
+// console.log("===============================================");
 
-console.log("===============================================");
+// console.log("Бодлого-16: Ажилчдын ID-г массив болгон буцаах функц бич.");
 
-console.log("Бодлого-16: Ажилчдын ID-г массив болгон буцаах функц бич.");
+// function getEmployeeId(employees) {
+//   const employeeIds = new Array(employees.length);
+//   for (let i = 0; i < employees.length; i++) {
+//     employeeIds[i] = employees[i].id;
+//   }
+//   return employeeIds;
+// }
 
-function getEmployeeId(employees) {
-  const employeeIds = new Array(employees.length);
-  for (let i = 0; i < employees.length; i++) {
-    employeeIds[i] = employees[i].id;
-  }
-  return employeeIds;
-}
+// const ids = getEmployeeId(employees);
+// console.log(ids);
 
-const ids = getEmployeeId(employees);
-console.log(ids);
+// console.log("Бодлого-17: Ажилчдын цалингаар нь өсөхөөр эрэмбэлэх функц бич.");
 
-console.log("Бодлого-17: Ажилчдын цалингаар нь өсөхөөр эрэмбэлэх функц бич.");
+// function sortBySalaryAscending(employees) {
+//   employees.sort((a, b) => a.salary - b.salary);
+//   return employees;
+// }
 
-function sortBySalaryAscending(employees) {
-  employees.sort((a, b) => a.salary - b.salary);
-  return employees;
-}
+// const sortedEmployees = sortBySalaryAscending(employees);
+// console.log(sortedEmployees);
 
-const sortedEmployees = sortBySalaryAscending(employees);
-console.log(sortedEmployees);
-
-console.log("===============================================");
+// console.log("===============================================");
 
 // //Өмнөх бодлогуудыг функц ашиглан бодох:
 
@@ -2373,15 +2373,15 @@ console.log("string");
 const text = "Hello pinecone. Welcome to the world.";
 console.log(text[0]);
 
-for(let i = 0; i < text.length; i++){
-  console.log(text[i])
+for (let i = 0; i < text.length; i++) {
+  console.log(text[i]);
 }
 
-for(let char of text){
-  console.log(char)
+for (let char of text) {
+  console.log(char);
 }
 
-for(let i in text){
+for (let i in text) {
   console.log(text[i]);
 }
 
@@ -2404,34 +2404,52 @@ console.log(subStr);
 console.log(str.includes("Pinecone"));
 const i = str.indexOf("Pinecone");
 console.log(i);
-console.log(str.substring(i, i +8));
+console.log(str.substring(i, i + 8));
 
 const str1 = "Hello";
 const str2 = "Pinecone";
 console.log("===============================================");
-console.log("Бодлого: Өгөгдсөн string-үүдийг нэгтгэх функц бич?")
+console.log("Бодлого1: Өгөгдсөн string-үүдийг нэгтгэх функц бич?");
 
-const myConcat = (str1, str2, str3) => {
-  console.log(str1, str2, str3)
-  return str1 + str2 + str3;
-};
-
-const result = myConcat("Hello", "Pinecone", "Academy");
-console.log((result));
-console.log("===============================================");
-console.log("Бодлого: Өгөгдсөн string-д өгөгдсөн тэмдэгт байгаа эсэхийг шалгах функц бич.")
-
-const isExistChar = (text, char) => {
-for(let char of text){
-  if(text[i] === char){
-    return true;
+const negtgehStrings = (...strings) => {
+  let result = "";
+  for (const str of strings) {
+    result += str;
   }
-
-}
-return false;
+  return result;
 };
+
+const result12 = negtgehStrings("Hello", ", ", "world", "!");
+console.log(result12);
+
 console.log("===============================================");
-console.log("бодлого: Өгөгдсөн string-д өгөгдсөн тэмдэгт байгаа тоог олох функц бич.");
+console.log(
+  "Бодлого2: Өгөгдсөн string-д өгөгдсөн тэмдэгт байгаа эсэхийг шалгах функц бич."
+);
+
+const checkCharacter = (str, char) => str.includes(char);
+
+const myString = "Hello pinecone.";
+const myChar = "o";
+
+const result11 = checkCharacter(myString, myChar);
+console.log(result11);
+
+console.log("===============================================");
+console.log(
+  "бодлого3: Өгөгдсөн string-д өгөгдсөн тэмдэгт байгаа тоог олох функц бич."
+);
+
+const countCharacter = (str, char) => {
+  return str.split(char).length - 1;
+};
+
+const myStrings = "Hello, pinecone!";
+const mychara = "o";
+
+const result13 = countCharacter(myStrings, mychara);
+console.log(result13);
+
 console.log("===============================================");
 
 //array methods
@@ -2464,7 +2482,7 @@ const res = animals.toString();
 console.log("RES:", res);
 
 const res2 = animals.join(" ");
-console.log(res2)
+console.log(res2);
 
 const res3 = animals.indexOf("Fish");
 console.log(res3);
@@ -2479,24 +2497,56 @@ console.log(res4);
 const res5 = animals.splice(1, 1);
 console.log(animals);
 
-const res6 = animals.splice(2, 1, );
+const res6 = animals.splice(2, 1);
 
 console.log("===============================================");
 
-console.log("Бодлого-1: Өгөгдсөн array-рүү тоо нэмж оруулдаг function бич.")
+console.log("Бодлого-1: Өгөгдсөн array-рүү тоо нэмж оруулдаг function бич.");
 
-const myPush = (input1, input2) => {
-}
+const addNumber = (arr, num) => {
+  arr.push(num);
+  return arr;
+};
 
+let myArray = [1, 2, 3];
+myArray = addNumber(myArray, 4);
+console.log(myArray);
 
+console.log("===============================================");
 
-const arr = [ "hello", "world", "javascript", "array"];
+console.log(
+  "Бодлого-2: Өгөгдсөн тэмдэгт мөрийн бүх үсгийг том үсэг болгох функц бич?input: the quick brown fox"
+);
+
+const toUpperCase = (str) => str.toUpperCase();
+
+const inputString = "the quick brown fox";
+const upperCaseString = toUpperCase(inputString);
+console.log(upperCaseString);
+console.log("===============================================");
+
+console.log(
+  "Бодлого-3: Өгөгдсөн тэмдэгт мөрийн Array-ийг тус бүрийн тэмдэгт мөрийг урвуугаар буцаах шинэ array буцаадаг функц бич."
+);
+const arr = ["hello", "world", "javascript", "array"];
 const newArr2 = [];
 
-for(const element of arr){
+for (const element of arr) {
   const revEl = element.split("").reverse().join("");
   newArr2.push(revEl);
 }
 
 console.log(arr);
 console.log(newArr2);
+console.log("===============================================");
+
+("Бодлого-4: Өгөгдсөн text дотор тухайн үг нь байна уу гэдгийг шалгах функц бич? text = animal world input: animal output: true, input: cat output: false");
+
+const isWordInText = (text0, word) => text0.includes(word);
+
+const text0 = "animal world";
+
+console.log(isWordInText(text0, "animal"));
+console.log(isWordInText(text0, "cat"));
+
+console.log("===============================================");
