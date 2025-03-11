@@ -2540,7 +2540,7 @@ console.log(arr);
 console.log(newArr2);
 console.log("===============================================");
 
-("Бодлого-4: Өгөгдсөн text дотор тухайн үг нь байна уу гэдгийг шалгах функц бич? text = animal world input: animal output: true, input: cat output: false");
+console.log("Бодлого-4: Өгөгдсөн text дотор тухайн үг нь байна уу гэдгийг шалгах функц бич? text = animal world input: animal output: true, input: cat output: false");
 
 const isWordInText = (text0, word) => text0.includes(word);
 
