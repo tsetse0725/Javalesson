@@ -43,3 +43,8 @@ btn.addEventListener("click", () => {
    h1.classList.add("border")
 });
 
+const randomToo = Math.random() * 10;  
+console.log(randomToo)
+
+//03/12
+
