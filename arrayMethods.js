@@ -96,3 +96,63 @@ num.forEach((number, index, array) => {
 });
 
 console.log(num);
+
+//Бодлого-4
+
+console.log("Бодлого-4");
+
+const students = [
+  { id: 1, name: "Alice", age: 14, grade: "8th" },
+  { id: 2, name: "Bob", age: 15, grade: "9th" },
+  { id: 3, name: "Charlie", age: 14, grade: "8th" },
+  { id: 4, name: "David", age: 16, grade: "10th" },
+];
+
+const schools = [
+  { name: "Greenwood High", city: "New York", minAge: 14 },
+  { name: "Riverside Academy", city: "Los Angeles", minAge: 15 },
+];
+
+// const a = students.map((el, ind) => {
+//   if(el.age === 14){
+//     return {...el, age: el.age + 1}
+//   }else{return el}
+// });
+
+// console.log(a)
+
+const studentMatches = students.map(student => ({
+  name: student.name, 
+  eligibleSchools: schools.filter(school => school.minAge >= student.age)
+}));
+
+console.log()
+
+const arr = [1, 2, 3];
+
+let newArr = [...arr];
+console.log(newArr);
+
+let nu = 0;
+
+const x = ["x++", "++x", "x--", "--x", ] // => 0;
+
+x.forEach(operator => {
+  if(operator === "x++"){
+    nu++
+  }else if(operator === "++x"){
+    ++nu
+  }else if(operator === "x--"){
+    nu--
+  }else if(operator === "--x"){
+    --nu
+  }
+})
+
+console.log("hariu:", nu);
+
+
+
+
+
+
