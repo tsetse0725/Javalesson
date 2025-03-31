@@ -138,21 +138,32 @@ let nu = 0;
 const x = ["x++", "++x", "x--", "--x", ] // => 0;
 
 x.forEach(operator => {
-  if(operator === "x++"){
+  if(operator === "x++" || operator === "++x"){
     nu++
-  }else if(operator === "++x"){
-    ++nu
-  }else if(operator === "x--"){
+  }else if(operator === "x--" || operator === "--x"){
     nu--
-  }else if(operator === "--x"){
-    --nu
   }
 })
 
 console.log("hariu:", nu);
 
+const a = 100;
+const b = 3;
 
+//num1 = 1ees a hurtelh toonii b toond huwaagdaj bolohgui toonii niilber
+//num2 = 1ees a hurtelh toonii b toond huwaagdaj boloh toonii niilber
 
+let num1 = 0;
+let num2 = 0;
 
+for(let i = 1; i <=a; i++){
+  if(i % b !== 0){
+    num1 += i;
+  }else{
+    num2 += i;
+  }
+}
 
+console.log("num1=", num1);
+console.log("num2=", num2);
 

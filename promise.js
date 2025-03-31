@@ -125,3 +125,5 @@ fetch("https://jsonplaceholder.typicode.com/users")
     console.log(groupedUsers);
   })
   .catch((error) => console.error("Өгөгдөл татахад алдаа гарлаа:", error));
+
+  
