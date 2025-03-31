@@ -1,26 +1,51 @@
 const userList = document.getElementById("user-list");
+const loadUsersButton = document.getElementById("load-users");
 
-const user = {
+const createUser = (user) => {
+  const { name, email, phone, website } = user;
 
+  return `
+        <div class="user">
+            <img
+                src="https://randomuser.me/api/portraits/men/69.jpg"
+                height="50px"
+                width="50px"
+                alt="man"
+            />
+            <div class="info">
+                <p>${name}</p>
+                <p>${email}</p>
+                <p>${phone}</p>
+                <p>${website}</p>
+            </div>
+        </div>`;
 };
 
-const addUser = (user) = {
-    const {image, fullName, email, position, phone number} = user
-}
+const addUsers = async () => {
+  const users = await getUsers();
 
-userList.innerHTML = ` <div id="user-list">
-      <span class="user-image"><img src="./user list.jpg" alt="" /></span>
-      <span class="user-name"> Full name</span>
-      <span class="user-email">Email</span>
-      <span class="user-position">Boss</span>
-      <span class="user-phone number">Phone number</span>
-    </div>
-`
-//try
+  let usersHTML = "";
 
-//await
+  users.forEach((user) => {
+    const userHTML = createUser(user);
+    usersHTML += userHTML;
+  });
 
-//async
+  userList.innerHTML = usersHTML;
+};
 
-//nullish
+const getUsers = async () => {
+  const url = "https://jsonplaceholder.typicode.com/users";
 
+  try {
+    const response = await fetch(url);
+    const users = await response.json();
+
+    return users;
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
+};
+
+loadUsersButton.addEventListener("click", addUsers);
