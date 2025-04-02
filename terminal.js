@@ -9,7 +9,7 @@ const data = [
 ];
 
 const getSuggestedUsers = async () => {
-  return new Promise((resolver) => {
+  return new Promise((resolve) => {
     const suggestedUsers = data.filter((user) => user.suggested);
     resolve(suggestedUsers);
   });

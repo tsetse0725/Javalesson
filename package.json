@@ -1,0 +1,17 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "anh udaa surj baina.",
+  "main": "npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "is-number": "^7.0.0",
+    "lodash": "^4.17.21",
+    "uuid": "^11.1.0"
+  }
+}
