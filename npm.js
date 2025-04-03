@@ -37,3 +37,5 @@ const object1 = {a : 1}
 const object2 = {b : 2}
 const mergedObject = merge(object1, object2)
 console.log(mergedObject)
+
+//framework
